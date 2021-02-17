@@ -54,10 +54,3 @@ func do_these_tiles_have_grass(current_player_position_tiles):
 
 
 
-
-
-
-
-
-
-

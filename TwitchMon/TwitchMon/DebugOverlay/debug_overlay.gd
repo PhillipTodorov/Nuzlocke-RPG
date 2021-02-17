@@ -17,5 +17,20 @@ func _process(delta):
 				value = s[1].get(s[2])
 		label_text += str(s[0], ": ", value)
 		label_text += "\n"
-		
 	$Label.text = label_text
+	
+func _input(event):
+	toggle_debug_overlay()
+
+func toggle_debug_overlay():
+	if Input.is_action_pressed("debug_overlay"):
+		if $Label.is_visible():
+			$Label.visible = false
+			print("invisible")
+			print("hi")
+		else:
+			$Label.visible = true
+			print("visible")
+#
+
+	
