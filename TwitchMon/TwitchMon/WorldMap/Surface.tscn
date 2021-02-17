@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://TileMapAssets.tres" type="TileSet" id=1]
+[ext_resource path="res://WorldMap/TileMapAssets.tres" type="TileSet" id=1]
 
 [sub_resource type="VisualScriptFunction" id=1]
 resource_name = "new_function"
@@ -19,7 +19,7 @@ data = {
 "data_connections": [  ],
 "function_id": 0,
 "name": "new_function",
-"nodes": [ 0, Vector2( 40, 240 ), SubResource( 1 ) ],
+"nodes": [ 0, Vector2( 260, 360 ), SubResource( 1 ) ],
 "scroll": Vector2( -50, -100 ),
 "sequence_connections": [  ]
 } ],
