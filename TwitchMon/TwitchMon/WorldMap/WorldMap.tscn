@@ -24,4 +24,4 @@ position = Vector2( 0, 0 )
 
 [node name="Surface" parent="YSort" instance=ExtResource( 4 )]
 script = ExtResource( 8 )
-target_stage = "res://BattlePhase.tscn"
+target_stage = "res://BattlePhase/BattlePhase.tscn"
