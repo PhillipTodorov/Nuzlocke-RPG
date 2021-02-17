@@ -1,4 +1,4 @@
-extends CollisionShape2D
+extends Node2D
 
 
 # Declare member variables here. Examples:
@@ -8,8 +8,9 @@ extends CollisionShape2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-	
+	var overlay = load("res://DebugOverlay/debug_overlay.tscn").instance()
+	overlay.add_stat("Player position", $Player, "position", false)
+	add_child(overlay)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

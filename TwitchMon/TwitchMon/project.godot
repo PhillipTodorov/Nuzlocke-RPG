@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Twitch Mon"
+run/main_scene="res://WorldMap/WorldMap.tscn"
 config/icon="res://icon.png"
 
 [display]

@@ -18,7 +18,7 @@ func _process(delta):
 
 func grass_encounter():
 	var current_player_position_tiles = [get_players_inhabited_tiles()]
-	print(do_these_tiles_have_grass(current_player_position_tiles))
+	#print(do_these_tiles_have_grass(current_player_position_tiles))
 	if do_these_tiles_have_grass(current_player_position_tiles):
 		battle_trigger()
 		
