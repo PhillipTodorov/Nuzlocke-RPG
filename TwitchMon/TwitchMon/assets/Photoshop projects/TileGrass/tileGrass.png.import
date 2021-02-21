@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Twitch avatar.png-a646723986eb39e7405059b87812f889.stex"
+path="res://.import/tileGrass.png-dedccaacce37df164dc17b73cd2f8251.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/Twitch avatar.png"
-dest_files=[ "res://.import/Twitch avatar.png-a646723986eb39e7405059b87812f889.stex" ]
+source_file="res://assets/Photoshop projects/TileGrass/tileGrass.png"
+dest_files=[ "res://.import/tileGrass.png-dedccaacce37df164dc17b73cd2f8251.stex" ]
 
 [params]
 

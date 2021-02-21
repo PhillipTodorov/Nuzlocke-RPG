@@ -93,9 +93,9 @@
 [ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn.png" type="Texture" id=91]
 [ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn_full.png" type="Texture" id=92]
 [ext_resource path="res://assets/hexagontiles/Tiles/tileDirt.png" type="Texture" id=93]
-[ext_resource path="res://assets/Photoshop projects/tileGrassTwoTileSize.png" type="Texture" id=94]
-[ext_resource path="res://assets/Photoshop projects/tileGrass.png" type="Texture" id=95]
-[ext_resource path="res://assets/Photoshop projects/tileGrassFront.png" type="Texture" id=96]
+[ext_resource path="res://assets/Photoshop projects/TileGrass/tileGrassTwoTileSize.png" type="Texture" id=94]
+[ext_resource path="res://assets/Photoshop projects/TileGrass/tileGrass.png" type="Texture" id=95]
+[ext_resource path="res://assets/Photoshop projects/TileGrass/tileGrassFront.png" type="Texture" id=96]
 
 [node name="Node2D" type="Node2D"]
 

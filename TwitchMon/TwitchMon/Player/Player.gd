@@ -29,6 +29,10 @@ func MovementLoop(delta):
 		speed = max_speed
 	if move_direction.x == 0 && move_direction.y == 0:
 		speed = 0
+	if move_direction.x < 0:
+		$Sprite.flip_h = false
+	if move_direction.x > 0:
+		$Sprite.flip_h = true
 	var motion = move_direction.normalized() * speed
 	move_and_slide(motion)
 

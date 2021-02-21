@@ -26,11 +26,8 @@ func toggle_debug_overlay():
 	if Input.is_action_pressed("debug_overlay"):
 		if $Label.is_visible():
 			$Label.visible = false
-			print("invisible")
-			print("hi")
 		else:
 			$Label.visible = true
-			print("visible")
 #
 
 	

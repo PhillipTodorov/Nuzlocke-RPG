@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileGrassFront.png-8ae1455f29b3733276d3b7aafe035a76.stex"
+path="res://.import/twitch sprite.png-3997e09148065bd59b62344092a9574e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/tileGrassFront.png"
-dest_files=[ "res://.import/tileGrassFront.png-8ae1455f29b3733276d3b7aafe035a76.stex" ]
+source_file="res://assets/Photoshop projects/PlayerAnimatedSprite/twitch sprite.png"
+dest_files=[ "res://.import/twitch sprite.png-3997e09148065bd59b62344092a9574e.stex" ]
 
 [params]
 

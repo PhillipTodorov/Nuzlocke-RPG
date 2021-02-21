@@ -93,9 +93,9 @@
 [ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn.png" type="Texture" id=91]
 [ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn_full.png" type="Texture" id=92]
 [ext_resource path="res://assets/hexagontiles/Tiles/tileDirt.png" type="Texture" id=93]
-[ext_resource path="res://assets/Photoshop projects/tileGrassTwoTileSize.png" type="Texture" id=94]
-[ext_resource path="res://assets/Photoshop projects/tileGrass.png" type="Texture" id=95]
-[ext_resource path="res://assets/Photoshop projects/tileGrassFront.png" type="Texture" id=96]
+[ext_resource path="res://assets/Photoshop projects/TileGrass/tileGrassFront.png" type="Texture" id=94]
+[ext_resource path="res://assets/Photoshop projects/TileGrass/tileGrassTwoTileSize.png" type="Texture" id=95]
+[ext_resource path="res://assets/Photoshop projects/TileGrass/tileGrass.png" type="Texture" id=96]
 
 [resource]
 0/name = "alienBeige"
@@ -1401,7 +1401,7 @@
 92/shapes = [  ]
 92/z_index = 0
 93/name = "tileGrassTwoTileSize"
-93/texture = ExtResource( 94 )
+93/texture = ExtResource( 95 )
 93/tex_offset = Vector2( 0, 0 )
 93/modulate = Color( 1, 1, 1, 1 )
 93/region = Rect2( 0, 0, 210, 286 )
@@ -1415,7 +1415,7 @@
 93/shapes = [  ]
 93/z_index = 0
 94/name = "tileGrass2"
-94/texture = ExtResource( 95 )
+94/texture = ExtResource( 96 )
 94/tex_offset = Vector2( 0, 0 )
 94/modulate = Color( 1, 1, 1, 1 )
 94/region = Rect2( 0, 0, 65, 89 )
@@ -1429,7 +1429,7 @@
 94/shapes = [  ]
 94/z_index = 0
 95/name = "tileGrassFront"
-95/texture = ExtResource( 96 )
+95/texture = ExtResource( 94 )
 95/tex_offset = Vector2( 0, 0 )
 95/modulate = Color( 1, 1, 1, 1 )
 95/region = Rect2( 0, 0, 65, 89 )

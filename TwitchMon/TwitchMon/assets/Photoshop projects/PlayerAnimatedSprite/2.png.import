@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileGrassTwoTileSize.png-9a4a2757b3f0e30ea0bd495e6117eefd.stex"
+path="res://.import/2.png-ff8fd2e295987b3ea75bfb4653d3c1d0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/tileGrassTwoTileSize.png"
-dest_files=[ "res://.import/tileGrassTwoTileSize.png-9a4a2757b3f0e30ea0bd495e6117eefd.stex" ]
+source_file="res://assets/Photoshop projects/PlayerAnimatedSprite/2.png"
+dest_files=[ "res://.import/2.png-ff8fd2e295987b3ea75bfb4653d3c1d0.stex" ]
 
 [params]
 
