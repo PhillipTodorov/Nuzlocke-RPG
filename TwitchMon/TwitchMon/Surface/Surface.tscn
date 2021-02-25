@@ -10,17 +10,17 @@ data = {
 "base_type": "TileMap",
 "functions": [ {
 "data_connections": [  ],
-"function_id": -1,
-"name": "f_312843592",
-"nodes": [  ],
-"scroll": Vector2( 0, 0 ),
-"sequence_connections": [  ]
-}, {
-"data_connections": [  ],
 "function_id": 0,
 "name": "new_function",
 "nodes": [ 0, Vector2( 40, 240 ), SubResource( 1 ) ],
 "scroll": Vector2( -50, -100 ),
+"sequence_connections": [  ]
+}, {
+"data_connections": [  ],
+"function_id": -1,
+"name": "f_312843592",
+"nodes": [  ],
+"scroll": Vector2( 0, 0 ),
 "sequence_connections": [  ]
 } ],
 "is_tool_script": false,
