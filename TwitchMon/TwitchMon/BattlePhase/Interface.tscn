@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://BattlePhase/LightHeavySpecialTextBox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://BattlePhase/AttackItemsRunSpiritsTextBox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://BattlePhase/Interface.gd" type="Script" id=3]
-[ext_resource path="res://BattlePhase/LightHeavySpecialTextBox.gd" type="Script" id=4]
 
 [node name="Interface" type="Control"]
 margin_right = 1280.0
@@ -13,12 +12,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AttackItemsRunSpirits" parent="." instance=ExtResource( 2 )]
-margin_right = -89.48
-
 [node name="LightHeavySpecial" parent="." instance=ExtResource( 1 )]
-margin_left = 0.206299
-margin_top = 89.6881
-margin_right = -90.2737
-margin_bottom = 89.9281
-script = ExtResource( 4 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -45.0
+margin_top = -39.0
+margin_right = 45.0
+margin_bottom = 39.0
+
+[node name="AttackItemsRunSpirits" parent="." instance=ExtResource( 2 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -45.0
+margin_top = -39.0
+margin_right = 45.0
+margin_bottom = 39.0

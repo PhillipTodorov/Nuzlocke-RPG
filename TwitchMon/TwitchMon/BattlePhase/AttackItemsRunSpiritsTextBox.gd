@@ -1,6 +1,6 @@
 extends NinePatchRect
 
-
+onready var lightHeavySpecial = get_parent().get_node("LightHeavySpecial")
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -8,6 +8,7 @@ extends NinePatchRect
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	lightHeavySpecial.visible = true
 	pass # Replace with function body.
 
 
@@ -21,5 +22,7 @@ func _on_Text_3_pressed():
 
 
 func _on_Text_1_pressed():
-	get_tree().change_scene("res://BattlePhase/LightHeavySpecialTextBox.tscn")
+	lightHeavySpecial.visible = true
+	self.visible = false
+
 

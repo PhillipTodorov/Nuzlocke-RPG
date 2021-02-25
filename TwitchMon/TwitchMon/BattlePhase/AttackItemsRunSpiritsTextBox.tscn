@@ -4,7 +4,7 @@
 [ext_resource path="res://Fonts/LuckiestGuy.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://BattlePhase/AttackItemsRunSpiritsTextBox.gd" type="Script" id=3]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 14
 font_data = ExtResource( 2 )
 
@@ -19,7 +19,7 @@ script = ExtResource( 3 )
 [node name="Text 1" parent="." index="0"]
 margin_left = -14.5
 margin_right = 47.5
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "ATTACK"
 
 [node name="Text 2" parent="." index="1"]
