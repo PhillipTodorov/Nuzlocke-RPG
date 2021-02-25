@@ -14,12 +14,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_Text_3_pressed():
-	get_tree().change_scene("res://WorldMap/WorldMap.tscn")
-
-
-func _on_Text_1_pressed():
-	get_tree().change_scene("res://BattlePhase/LightHeavySpecialTextBox.tscn")
-
