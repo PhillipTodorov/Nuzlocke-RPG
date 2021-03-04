@@ -18,8 +18,8 @@ func _ready():
 
 
 func _on_Text_3_pressed():
-	get_tree().change_scene("res://WorldMap/WorldMap.tscn")
-
+	get_tree().change_scene("res://Main/Main.tscn")
+	
 
 func _on_Text_1_pressed():
 	lightHeavySpecial.visible = true

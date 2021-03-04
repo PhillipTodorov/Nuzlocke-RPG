@@ -16,6 +16,7 @@ func _ready():
 
 func _physics_process(delta):
 	MovementLoop(delta)
+	Global.player_position = self.global_position
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
