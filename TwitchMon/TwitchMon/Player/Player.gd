@@ -5,10 +5,11 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 
-var max_speed = 400
+var max_speed = 200
 var speed = 0
 var acceleration = 1200
 var move_direction = Vector2(0,0)
+var orientation: String
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,10 +31,20 @@ func MovementLoop(delta):
 		speed = max_speed
 	if move_direction.x == 0 && move_direction.y == 0:
 		speed = 0
+		
+		if orientation == "SE":
+			$AnimationPlayer.play("Idle_SE")
+		if orientation == "SW":
+			$AnimationPlayer.play("Idle_SW")
+
 	if move_direction.x < 0:
-		$Sprite.flip_h = false
+		orientation = "SW"
+		$AnimationPlayer.play("Walk_SW")
+		
 	if move_direction.x > 0:
-		$Sprite.flip_h = true
+		orientation = "SE"
+		$AnimationPlayer.play("Walk_SE")
+		
 	var motion = move_direction.normalized() * speed
 	move_and_slide(motion)
 

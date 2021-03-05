@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2.png-ff8fd2e295987b3ea75bfb4653d3c1d0.stex"
+path="res://.import/twitch sprite animation-Sheet.png-dc718339a03401095dba5ac29373685e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/PlayerAnimatedSprite/2.png"
-dest_files=[ "res://.import/2.png-ff8fd2e295987b3ea75bfb4653d3c1d0.stex" ]
+source_file="res://assets/PlayerAnimatedSprite/twitch sprite animation-Sheet.png"
+dest_files=[ "res://.import/twitch sprite animation-Sheet.png-dc718339a03401095dba5ac29373685e.stex" ]
 
 [params]
 

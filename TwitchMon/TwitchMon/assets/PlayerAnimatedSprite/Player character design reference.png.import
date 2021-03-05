@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/1.png-17bb4d5c8f467f949b7cf1584ba6aede.stex"
+path="res://.import/Player character design reference.png-013dba8c28aa12a308545e6d68d0e70f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/PlayerAnimatedSprite/1.png"
-dest_files=[ "res://.import/1.png-17bb4d5c8f467f949b7cf1584ba6aede.stex" ]
+source_file="res://assets/PlayerAnimatedSprite/Player character design reference.png"
+dest_files=[ "res://.import/Player character design reference.png-013dba8c28aa12a308545e6d68d0e70f.stex" ]
 
 [params]
 
