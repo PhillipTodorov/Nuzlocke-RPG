@@ -4,7 +4,7 @@ export(String, FILE, "*.tscn") var target_stage
 
 onready var player = get_parent().get_node("Player")
 #onready var player = $"WorldMap/YSort/Player"
-onready var chance_for_encounter = 0.005
+onready var chance_for_encounter = 0.05
 onready var tiles_with_tall_grass_id = tile_set.find_tile_by_name('tileGrass2')
 onready var tiles_with_tall_grass_array = []
 

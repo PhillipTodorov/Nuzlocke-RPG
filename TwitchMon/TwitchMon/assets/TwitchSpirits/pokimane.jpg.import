@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BattleSceneForest.png-0be06993c83e22568f79d54a78298bdd.stex"
+path="res://.import/pokimane.jpg-2767e5636428a5cdda2d1a4ac0cbab83.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/BattleScene/BattleSceneForest.png"
-dest_files=[ "res://.import/BattleSceneForest.png-0be06993c83e22568f79d54a78298bdd.stex" ]
+source_file="res://assets/TwitchSpirits/pokimane.jpg"
+dest_files=[ "res://.import/pokimane.jpg-2767e5636428a5cdda2d1a4ac0cbab83.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pokimane.jpg-025d958890f6ab5df1f273ab1334ceca.stex"
+path="res://.import/tileGrass.png-e8ee9670a7a0604f4989801c84978fd3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/TwitchSpirits/pokimane.jpg"
-dest_files=[ "res://.import/pokimane.jpg-025d958890f6ab5df1f273ab1334ceca.stex" ]
+source_file="res://assets/TileGrass/tileGrass.png"
+dest_files=[ "res://.import/tileGrass.png-e8ee9670a7a0604f4989801c84978fd3.stex" ]
 
 [params]
 

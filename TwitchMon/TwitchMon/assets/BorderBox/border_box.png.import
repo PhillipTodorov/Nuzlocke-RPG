@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/alterative art style.jpg-e587acec77a69bb2e747fd956dae3b7e.stex"
+path="res://.import/border_box.png-77c98c680161916255ae4d635a366e6d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/TwitchSpirits/alterative art style.jpg"
-dest_files=[ "res://.import/alterative art style.jpg-e587acec77a69bb2e747fd956dae3b7e.stex" ]
+source_file="res://assets/BorderBox/border_box.png"
+dest_files=[ "res://.import/border_box.png-77c98c680161916255ae4d635a366e6d.stex" ]
 
 [params]
 

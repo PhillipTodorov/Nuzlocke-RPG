@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Michael_Reeves.jpg-a8bdf5e0766ba6459d1ed9975bbf6faf.stex"
+path="res://.import/tileGrassFront.png-87814dc67b80420ba6a53069a0c18132.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/TwitchSpirits/Michael_Reeves.jpg"
-dest_files=[ "res://.import/Michael_Reeves.jpg-a8bdf5e0766ba6459d1ed9975bbf6faf.stex" ]
+source_file="res://assets/TileGrass/tileGrassFront.png"
+dest_files=[ "res://.import/tileGrassFront.png-87814dc67b80420ba6a53069a0c18132.stex" ]
 
 [params]
 

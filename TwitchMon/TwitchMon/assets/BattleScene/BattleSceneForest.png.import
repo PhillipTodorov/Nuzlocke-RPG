@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileGrassTwoTileSize.png-d768a6f0524fbe81f4429d99b824751c.stex"
+path="res://.import/BattleSceneForest.png-593cf6dc55aacc9b8115a349476c0428.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/TileGrass/tileGrassTwoTileSize.png"
-dest_files=[ "res://.import/tileGrassTwoTileSize.png-d768a6f0524fbe81f4429d99b824751c.stex" ]
+source_file="res://assets/BattleScene/BattleSceneForest.png"
+dest_files=[ "res://.import/BattleSceneForest.png-593cf6dc55aacc9b8115a349476c0428.stex" ]
 
 [params]
 

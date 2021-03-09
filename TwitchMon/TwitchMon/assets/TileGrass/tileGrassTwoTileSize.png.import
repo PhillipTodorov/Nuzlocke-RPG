@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/xQc.jpg-f2cd594703252023962dd46d1da436e1.stex"
+path="res://.import/tileGrassTwoTileSize.png-99c36d1694ef84f89145ec3a470654ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/TwitchSpirits/xQc.jpg"
-dest_files=[ "res://.import/xQc.jpg-f2cd594703252023962dd46d1da436e1.stex" ]
+source_file="res://assets/TileGrass/tileGrassTwoTileSize.png"
+dest_files=[ "res://.import/tileGrassTwoTileSize.png-99c36d1694ef84f89145ec3a470654ac.stex" ]
 
 [params]
 

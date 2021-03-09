@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileGrassFront.png-9195e284f69f2bbc64cc6e3dbdfe33ed.stex"
+path="res://.import/HealthBar_Front.png-1eddea6236ebf5b8740ea791c3993813.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/TileGrass/tileGrassFront.png"
-dest_files=[ "res://.import/tileGrassFront.png-9195e284f69f2bbc64cc6e3dbdfe33ed.stex" ]
+source_file="res://assets/HealthBar/HealthBar_Front.png"
+dest_files=[ "res://.import/HealthBar_Front.png-1eddea6236ebf5b8740ea791c3993813.stex" ]
 
 [params]
 

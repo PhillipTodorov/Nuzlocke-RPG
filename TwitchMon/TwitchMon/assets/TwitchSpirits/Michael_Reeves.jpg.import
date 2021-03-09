@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/border_box.png-b26d366e6c4ff3b50ca5557c870e0c74.stex"
+path="res://.import/Michael_Reeves.jpg-ad8884aee35bb921196214ccc2e50331.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Photoshop projects/BorderBox/border_box.png"
-dest_files=[ "res://.import/border_box.png-b26d366e6c4ff3b50ca5557c870e0c74.stex" ]
+source_file="res://assets/TwitchSpirits/Michael_Reeves.jpg"
+dest_files=[ "res://.import/Michael_Reeves.jpg-ad8884aee35bb921196214ccc2e50331.stex" ]
 
 [params]
 
