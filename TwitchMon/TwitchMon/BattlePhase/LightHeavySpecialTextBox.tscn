@@ -28,4 +28,7 @@ text = "BACK"
 [node name="Text 4" parent="." index="3"]
 custom_fonts/font = SubResource( 2 )
 text = "HEAVY"
+[connection signal="pressed" from="Text 1" to="." method="_on_Text_1_pressed"]
+[connection signal="pressed" from="Text 2" to="." method="_on_Text_2_pressed"]
 [connection signal="pressed" from="Text 3" to="." method="_on_Text_3_pressed"]
+[connection signal="pressed" from="Text 4" to="." method="_on_Text_4_pressed"]

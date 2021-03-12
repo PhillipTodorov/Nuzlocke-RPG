@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/HealthBar/HealthBar_Progress.png" type="Texture" id=2]
+[ext_resource path="res://assets/HealthBar/HealthBar_Front.png" type="Texture" id=3]
+[ext_resource path="res://assets/HealthBar/HealthBar_Back.png" type="Texture" id=4]
+[ext_resource path="res://Spirits/HealthBar.gd" type="Script" id=5]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+ 
+uniform vec4 masking_color : hint_color;
+uniform float masking_range = 0.1;
+ 
+void fragment()
+{
+	vec4 world_pixel = texture(SCREEN_TEXTURE, SCREEN_UV);
+	
+	if (length(abs(masking_color - world_pixel)) >= masking_range)
+	{
+		discard;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/masking_color = null
+shader_param/masking_range = 0.1
+
+[node name="HealthBar" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+margin_right = 192.0
+margin_bottom = 64.0
+value = 100.0
+texture_under = ExtResource( 4 )
+texture_over = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="HealthBar"]
+visible = false
+material = SubResource( 2 )
+margin_left = 1.78381
+margin_right = 41.7838
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpdateTween" type="Tween" parent="HealthBar"]
