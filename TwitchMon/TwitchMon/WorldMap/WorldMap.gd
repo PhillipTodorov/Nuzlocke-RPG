@@ -11,6 +11,9 @@ func _ready():
 	pass
 
 func _process(delta):	
+	if $AudioStreamPlayer.playing == false:
+		$AudioStreamPlayer.set_volume_db(linear2db(100))
+		$AudioStreamPlayer.play()
 	pass
 	
 
