@@ -1,6 +1,8 @@
 extends Node
 
 onready var RNG_number: float
+onready var friendly = get_node("Friendly/Spirit")
+onready var enemy = get_node("Enemy")
 
 onready var michael = "res://Spirits/Michael.tscn"
 onready var xqc = "res://Spirits/xQc.tscn"
@@ -24,12 +26,14 @@ func _ready():
 func compare_speed():
 	if tasks == 2:
 		block_input()
-#		if enemy.speed > friendly.speed:
-#			#execute enemy action first
-#			pass
-#		else:
-#			#execute friendly action  first
-#			pass
+		if enemy.get_child(0).get_node("Spirit").speed > friendly.get_child(1).get_node("Spirit").speed:
+			#execute enemy action first
+			print("enemy first")
+			pass
+		elif enemy.get_child(0).get_node("Spirit").speed < friendly.get_child(1).get_node("Spirit").speed:
+			#execute friendly action  first
+			print("friendly first")
+			pass
 		pass
 		unblock_input()
 	pass
@@ -74,3 +78,5 @@ func unblock_input():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	$"Friendly/Interface".visible == true
 	pass
+	
+

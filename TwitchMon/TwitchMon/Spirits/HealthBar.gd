@@ -2,10 +2,12 @@ extends Control
 
 onready var update_Tween = $"HealthBar/UpdateTween"
 onready var health_bar = $HealthBar
-
+onready var value = 0
 
 func _ready():
-	health_bar.value = 0
+	print("healthbar.gd, before", value)
+	self.value = get_parent().health
+	print("after", value)
 	pass
 
 
