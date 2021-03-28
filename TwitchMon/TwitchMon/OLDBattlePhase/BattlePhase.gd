@@ -1,12 +1,14 @@
 extends Node
 
 onready var RNG_number: float
-onready var friendly = get_node("Friendly/Spirit")
+onready var friendly = get_node("Friendly").get_child(1)
 onready var enemy = get_node("Enemy")
 
-onready var michael = "res://Spirits/Michael.tscn"
-onready var xqc = "res://Spirits/xQc.tscn"
-onready var poki = "res://Spirits/Poki.tscn"
+onready var lightheavyspecial = get_node("Friendly/Interface/LightHeavySpecial")
+
+onready var michael = "res://Spirits/Michael/Michael.tscn"
+onready var xqc = "res://Spirits/xQc/xQc.tscn"
+onready var poki = "res://Spirits/Poki/Poki.tscn"
 
 onready var list_of_spirits = {michael: 23, xqc: 7, poki: 3}
 

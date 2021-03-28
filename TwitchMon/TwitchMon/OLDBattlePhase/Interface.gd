@@ -1,6 +1,6 @@
 extends Control
 
-onready var Att_Ite_Run_Spr = preload("res://BattlePhase/AttackItemsRunSpiritsTextBox.tscn")
+#onready var Att_Ite_Run_Spr = preload("res://BattlePhase/AttackItemsRunSpiritsTextBox.tscn")
 
 
 # Called when the node enters the scene tree for the first time.

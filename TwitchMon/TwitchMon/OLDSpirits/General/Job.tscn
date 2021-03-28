@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://OLDSpirits/General/Job.gd" type="Script" id=1]
+[ext_resource path="res://OLDSpirits/General/Stats.gd" type="Script" id=2]
+[ext_resource path="res://OLDSpirits/General/MoveSet.gd" type="Script" id=3]
+[ext_resource path="res://Spirits/General/StartingStats.tres" type="Resource" id=4]
+
+
+
+[node name="Job" type="Node"]
+script = ExtResource( 1 )
+startingStats = ExtResource( 4 )
+
+[node name="MoveSet" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[node name="Stats" type="Node" parent="."]
+script = ExtResource( 2 )

@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/HealthBar/HealthBar_Progress.png" type="Texture" id=2]
-[ext_resource path="res://assets/HealthBar/HealthBar_Front.png" type="Texture" id=3]
-[ext_resource path="res://assets/HealthBar/HealthBar_Back.png" type="Texture" id=4]
-[ext_resource path="res://Spirits/HealthBar.gd" type="Script" id=5]
+[ext_resource path="res://assets/HealthBar/HealthBar_Front.png" type="Texture" id=1]
+[ext_resource path="res://assets/HealthBar/HealthBar_Back.png" type="Texture" id=2]
+[ext_resource path="res://assets/HealthBar/HealthBar_Progress.png" type="Texture" id=3]
+[ext_resource path="res://Spirits/General/HealthBar.gd" type="Script" id=4]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -29,24 +29,24 @@ shader_param/masking_range = 0.1
 [node name="HealthBar" type="Control"]
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="HealthBar" type="TextureProgress" parent="."]
+[node name="HealthBarTexture" type="TextureProgress" parent="."]
 margin_right = 192.0
 margin_bottom = 64.0
 value = 100.0
-texture_under = ExtResource( 4 )
-texture_over = ExtResource( 3 )
-texture_progress = ExtResource( 2 )
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 1 )
+texture_progress = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="HealthBar"]
+[node name="ColorRect" type="ColorRect" parent="HealthBarTexture"]
 visible = false
 material = SubResource( 2 )
 margin_left = 1.78381
@@ -56,4 +56,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="UpdateTween" type="Tween" parent="HealthBar"]
+[node name="UpdateTween" type="Tween" parent="HealthBarTexture"]

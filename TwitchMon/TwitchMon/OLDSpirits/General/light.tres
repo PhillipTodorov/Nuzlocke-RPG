@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://OLDSpirits/General/Skill.gd" type="Script" id=1]
+
+
+[resource]
+script = ExtResource( 1 )
+skill_name = "Light"
+skill_description = "Does less damage, has higher chance to hit than heavy attack"
+base_damage = 10
+success_chance = 0.95
