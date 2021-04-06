@@ -8,3 +8,6 @@ spirit_name = "Spirit"
 max_health = 100
 speed = 10
 health = 100
+spirit_placeholder_dict = {
+"spirit_name": "Spirit"
+}

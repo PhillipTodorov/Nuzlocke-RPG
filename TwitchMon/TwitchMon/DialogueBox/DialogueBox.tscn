@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DialogueBox/DialogueBox.gd" type="Script" id=1]
+[ext_resource path="res://DialogueBox/DialoguePlayer.gd" type="Script" id=2]
+
+[node name="DialogueBox" type="Control"]
+anchor_right = 0.569
+anchor_bottom = 0.311
+margin_right = -0.319946
+margin_bottom = 0.0799866
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 728.0
+margin_bottom = 224.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+anchor_right = 0.827
+anchor_bottom = 1.009
+margin_left = 3.0
+margin_top = 2.0
+margin_right = -0.0560913
+margin_bottom = -0.0160217
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Button" parent="."]
+margin_left = 606.0
+margin_right = 726.0
+margin_bottom = 59.0
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Done" type="Button" parent="."]
+margin_left = 606.0
+margin_top = 63.0
+margin_right = 726.0
+margin_bottom = 122.0
+text = "Done"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialoguePlayer" type="Node" parent="."]
+script = ExtResource( 2 )
+[connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]
+[connection signal="pressed" from="Done" to="." method="_on_Done_pressed"]

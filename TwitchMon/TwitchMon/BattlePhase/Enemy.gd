@@ -11,20 +11,20 @@ onready var list_of_spirits = {michael: 0, xqc: 0, poki: 0, general: 1}
 
 func _ready():
 	list_of_spirits = list_of_spirits_normalised(list_of_spirits)
-	print("[Enemy.gd] ",list_of_spirits)
+	#print("[Enemy.gd] ",list_of_spirits)
 	list_of_spirits = list_of_spirits_cumulative_odds(list_of_spirits)
-	print("[Enemy.gd] ",list_of_spirits)
+	#print("[Enemy.gd] ",list_of_spirits)
 	twitchmon_randomizer()
 	pass
 
 
 func twitchmon_randomizer():
 	RNG_number = randf()
-	print("[Enemy.gd] ",RNG_number)
+	#print("[Enemy.gd] RNG number: ",RNG_number)
 	
 	for spirit in list_of_spirits:
 		if list_of_spirits[spirit] > RNG_number:
-			print("[Enemy.gd] ",spirit)
+		#	print("[Enemy.gd] ",spirit)
 			self.add_child(load(spirit).instance())
 			break
 

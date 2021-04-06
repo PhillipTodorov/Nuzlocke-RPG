@@ -1,0 +1,9 @@
+{
+	"battlephase_start_0" : "A wild {Enemy_spirit_name} has appeared",
+	"battlephase_start_1" : "What will you do?",
+	"enemy_health_depleted_0" : "{Enemy_spirit_name} has been defeated",
+	"friendly_health_depleted_0" : "You have been defeated",
+	"friendly_health_depleted_1" : "You suck",
+	"friendly_attack_dialogue" : "Your {Friendly_spirit_name} used {attack}",
+	"enemy_attack_dialogue" : "The enemy {Enemy_spirit_name} used {attack}",
+}

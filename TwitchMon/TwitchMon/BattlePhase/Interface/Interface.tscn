@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://BattlePhase/Interface/Interface.gd" type="Script" id=1]
 [ext_resource path="res://OLDBattlePhase/AttackItemsRunSpiritsTextBox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://OLDBattlePhase/LightHeavySpecialTextBox.tscn" type="PackedScene" id=3]
 
@@ -8,6 +9,7 @@ anchor_right = 0.141
 anchor_bottom = 0.108
 margin_right = -0.479996
 margin_bottom = 0.239998
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
