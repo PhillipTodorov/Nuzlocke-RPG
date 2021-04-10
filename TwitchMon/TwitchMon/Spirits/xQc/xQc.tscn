@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Spirits/General/Spirit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/TwitchSpirits/xQc.jpg" type="Texture" id=2]
+[ext_resource path="res://Spirits/xQc/xQcStartingStats.tres" type="Resource" id=3]
+
+[node name="xQc" instance=ExtResource( 1 )]
+
+[node name="Jobs" parent="." index="2"]
+startingStats = ExtResource( 3 )
+
+[node name="icon" parent="." index="5"]
+position = Vector2( 96.5291, 127.229 )
+scale = Vector2( 0.403942, 0.389818 )
+texture = ExtResource( 2 )

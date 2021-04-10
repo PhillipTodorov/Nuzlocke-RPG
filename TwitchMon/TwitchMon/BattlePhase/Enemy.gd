@@ -7,7 +7,12 @@ onready var xqc = "res://Spirits/xQc/xQc.tscn"
 onready var poki = "res://Spirits/Poki/Poki.tscn"
 onready var general = "res://Spirits/General/Spirit.tscn"
 
-onready var list_of_spirits = {michael: 0, xqc: 0, poki: 0, general: 1}
+onready var list_of_spirits = {
+	michael: 1, 
+	xqc: 1, 
+	poki: 1, 
+	general: 1
+	}
 
 func _ready():
 	list_of_spirits = list_of_spirits_normalised(list_of_spirits)

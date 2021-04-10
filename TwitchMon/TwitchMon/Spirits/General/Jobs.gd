@@ -7,12 +7,14 @@ onready var stats = $Stats
 onready var moves = $Moves
 
 signal health_changed (new_health)
+signal max_health_changed (new_max_health)
 signal friendly_jobs_instantiated
 signal enemy_jobs_instantiated
 
 func _ready():
 	stats.initialise(startingStats)
 	emit_signal("health_changed", stats.health)
+	emit_signal("max_health_changed", stats.max_health)
 	#print("[Jobs.gd] ",startingStats.spirit_placeholder_dict)
 	
 	if get_parent().get_parent().name == "Friendly": 

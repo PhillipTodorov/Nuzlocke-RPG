@@ -8,9 +8,13 @@ onready var hp = $HP
 
 
 func _ready():
+	health_bar_texture.max_value = get_parent().get_node("Jobs/Stats").max_health
+	print("[HealthBar.gd] max health:", get_parent().get_node("Jobs/Stats").max_health)
 	health_bar_texture.value = get_parent().get_node("Jobs/Stats").health
+	print("[HealthBar.gd] health:", get_parent().get_node("Jobs/Stats").health)
 	jobs.connect("health_changed", self, "_on_health_updated")
 	stats.connect("health_changed", self, "_on_health_updated")
+	jobs.connect("max_health_changed", self, "_on_max_health_updated")
 
 
 

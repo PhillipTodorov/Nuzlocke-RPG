@@ -31,7 +31,7 @@ func _ready():
 
 
 func enemy_stats_initialise():
-	enemy_stats = get_tree().get_root().get_node("BattlePhase/Enemy/Spirit/Jobs/Stats")
+	enemy_stats = get_tree().get_root().get_node("BattlePhase/Enemy/").get_child(1).get_node("Jobs/Stats")
 	enemy_stats.connect("Enemy_health_depleted", self, "Enemy_health_depleted_Dialogue")
 	stats_counter += 1
 	if stats_counter == 2:
@@ -40,7 +40,7 @@ func enemy_stats_initialise():
 
 
 func friendly_stats_initialise():	
-	friendly_stats = get_tree().get_root().get_node("BattlePhase/Friendly/Spirit/Jobs/Stats")
+	friendly_stats = get_tree().get_root().get_node("BattlePhase/Friendly/").get_child(0).get_node("Jobs/Stats")
 	friendly_stats.connect("Friendly_health_depleted", self, "Friendly_health_depleted_Dialogue")
 	stats_counter += 1
 	if stats_counter == 2:

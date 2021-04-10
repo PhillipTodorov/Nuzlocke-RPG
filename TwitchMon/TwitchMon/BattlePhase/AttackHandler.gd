@@ -44,7 +44,7 @@ func compare_speeds_and_attack():
 		friendly_stats.take_damage(enemy_damage)
 	else:
 		print("[AttackHandler.gd] enemy faster")
-		friendly_stats.take_damage(enemy_attack)
+		friendly_stats.take_damage(enemy_damage)
 		enemy_stats.take_damage(enemy_damage)
 	print("[AttackHandler.gd] friendly health: ", friendly_stats.health)
 	print("[AttackHandler.gd] enemy health: ", enemy_stats.health)
