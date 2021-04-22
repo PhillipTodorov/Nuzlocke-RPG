@@ -5,7 +5,7 @@ onready var update_Tween = $HealthBarTexture/UpdateTween
 onready var jobs = get_parent().get_node("Jobs")
 onready var stats = get_parent().get_node("Jobs/Stats")
 onready var hp = $HP
-
+onready var label_handler = get_parent().get_node("LabelHandler")
 
 func _ready():
 	health_bar_texture.max_value = get_parent().get_node("Jobs/Stats").max_health
@@ -23,8 +23,7 @@ func _on_health_updated(amount):
 #	health_bar_texture.value = amount
 	update_Tween.interpolate_property(health_bar_texture, "value", health_bar_texture.value, amount, 0.4, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 	update_Tween.start()
-	
-	hp.text = "HP: " + String(max(0,amount))
+	label_handler.update_hp_label(amount)
 	
 
 func _on_max_health_updated(max_health):

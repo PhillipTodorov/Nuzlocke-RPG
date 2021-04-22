@@ -1,8 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://BattlePhase/Interface/Interface.gd" type="Script" id=1]
-[ext_resource path="res://OLDBattlePhase/AttackItemsRunSpiritsTextBox.tscn" type="PackedScene" id=2]
-[ext_resource path="res://OLDBattlePhase/LightHeavySpecialTextBox.tscn" type="PackedScene" id=3]
+[ext_resource path="res://BattlePhase/Interface/AttackItemsRunSpiritsTextBox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BattlePhase/Interface/LightHeavySpecialTextBox.tscn" type="PackedScene" id=3]
+
+
 
 [node name="Interface" type="Control"]
 anchor_right = 0.141

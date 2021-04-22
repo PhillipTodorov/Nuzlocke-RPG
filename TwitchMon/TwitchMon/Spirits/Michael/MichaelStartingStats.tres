@@ -4,10 +4,11 @@
 
 [resource]
 script = ExtResource( 1 )
-spirit_name = "Spirit"
+spirit_name = "Michael"
 max_health = 130
 speed = 80
 health = 130
+xp = 0
 spirit_placeholder_dict = {
 "spirit_name": "Michael"
 }

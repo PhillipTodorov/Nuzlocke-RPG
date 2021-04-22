@@ -3,6 +3,7 @@ extends Node
 onready var max_health: int
 onready var speed:int
 onready var health: int
+onready var xp: int
 onready var dialogue_placeholder_dict: Dictionary
 
 signal health_changed (new_health)
@@ -12,6 +13,7 @@ signal Enemy_health_depleted
 func initialise(startingStats):
 	max_health = startingStats.max_health
 	speed = startingStats.speed
+	xp = startingStats.xp
 	health = max_health
 	dialogue_placeholder_dict = startingStats.spirit_placeholder_dict
 	pass

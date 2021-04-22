@@ -1,18 +1,23 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Spirits/General/Jobs.gd" type="Script" id=1]
 [ext_resource path="res://Spirits/General/Stats.gd" type="Script" id=2]
 [ext_resource path="res://Spirits/General/StartingStats.tres" type="Resource" id=3]
 [ext_resource path="res://Spirits/General/HealthBar.tscn" type="PackedScene" id=4]
 [ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://Spirits/General/LabelHandler.gd" type="Script" id=6]
 
 [node name="Spirit" type="Node2D"]
+
+[node name="LabelHandler" type="Node" parent="."]
+script = ExtResource( 6 )
 
 [node name="HealthBar" parent="." instance=ExtResource( 4 )]
 
 [node name="ReferenceRect" type="ReferenceRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_top = 56.0
+margin_right = 192.0
+margin_bottom = 248.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -34,6 +39,13 @@ __meta__ = {
 }
 
 [node name="Speed" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Xp" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
 __meta__ = {
