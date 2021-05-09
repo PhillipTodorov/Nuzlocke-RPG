@@ -6,10 +6,10 @@
 
 [node name="Spirit" instance=ExtResource( 1 )]
 
-[node name="Jobs" parent="." index="3"]
-startingStats = ExtResource( 3 )
-
-[node name="icon" parent="." index="7"]
+[node name="icon" parent="." index="2"]
 position = Vector2( 99.8934, 152.545 )
 scale = Vector2( 0.717663, 0.69257 )
 texture = ExtResource( 2 )
+
+[node name="Jobs" parent="." index="5"]
+startingStats = ExtResource( 3 )
