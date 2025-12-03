@@ -3,13 +3,13 @@ extends Control
 signal dialogue_ended()
 signal line_displayed(index)
 
-onready var dialogue_player = get_node("DialoguePlayer")
+@onready var dialogue_player = get_node("DialoguePlayer")
 
-onready var label_text = get_node("Text") as Label
-onready var button_next = get_node("Next") as Button
-onready var button_done = get_node("Done") as Button
+@onready var label_text = get_node("Text") as Label
+@onready var button_next = get_node("Next") as Button
+@onready var button_done = get_node("Done") as Button
 
-onready var interface = get_tree().get_root().get_node("Interface")
+@onready var interface = get_tree().get_root().get_node("Interface")
 
 var dialogue_key_prefix: String
 var battle_done = false
@@ -19,7 +19,7 @@ var dialogue_placeholder_dict: Dictionary
 
 
 func _ready():
-	dialogue_player.connect("dialogue_loaded", self, "_display_text_process")
+	dialogue_player.connect("dialogue_loaded", Callable(self, "_display_text_process"))
 
 #grabs focus to text box, hides and shows the correct buttons 
 func start():
@@ -62,7 +62,7 @@ func _on_Next_pressed():
 
 func _on_Done_pressed():
 	if battle_done:
-		get_tree().change_scene("res://Main/Main.tscn")
+		get_tree().change_scene_to_file("res://Main/Main.tscn")
 	self.hide()
 
 

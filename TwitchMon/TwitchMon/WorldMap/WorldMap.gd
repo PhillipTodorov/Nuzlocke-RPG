@@ -7,7 +7,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$"YSort/Player".global_position = Global.player_position
+	$"Node2D/Player".global_position = Global.player_position
 	pass
 
 func _process(delta):	

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://OLDSpirits/General/Spirit.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/TwitchSpirits/pokimane.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/TwitchSpirits/pokimane.jpg" type="Texture2D" id=2]
 [ext_resource path="res://OLDSpirits/Poki/Poki.gd" type="Script" id=3]
 
 
@@ -13,7 +13,7 @@ script = ExtResource( 3 )
 [node name="Spirit" parent="." instance=ExtResource( 1 )]
 position = Vector2( 4.00452, 1.33484 )
 
-[node name="pokimane" type="Sprite" parent="."]
+[node name="pokimane" type="Sprite2D" parent="."]
 position = Vector2( 99.5862, 155.927 )
 scale = Vector2( 0.113593, 0.113593 )
 texture = ExtResource( 2 )

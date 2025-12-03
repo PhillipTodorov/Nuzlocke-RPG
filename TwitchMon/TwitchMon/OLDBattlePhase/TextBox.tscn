@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/BorderBox/border_box.png" type="Texture" id=1]
+[ext_resource path="res://assets/BorderBox/border_box.png" type="Texture2D" id=1]
 [ext_resource path="res://OLDBattlePhase/InterfaceButton.tscn" type="PackedScene" id=2]
 
 
@@ -8,10 +8,10 @@
 [node name="TextBox" type="NinePatchRect"]
 anchor_right = 0.141
 anchor_bottom = 0.108
-margin_left = 1.0
-margin_right = -89.48
-margin_bottom = 0.239998
-rect_scale = Vector2( 2, 1 )
+offset_left = 1.0
+offset_right = -89.48
+offset_bottom = 0.239998
+scale = Vector2( 2, 1 )
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -24,17 +24,17 @@ anchor_left = 0.0
 anchor_top = 0.5
 anchor_right = 0.0
 anchor_bottom = 0.5
-margin_left = 0.0
-margin_top = -11.5
-margin_right = 60.0
-margin_bottom = 11.5
+offset_left = 0.0
+offset_top = -11.5
+offset_right = 60.0
+offset_bottom = 11.5
 text = "Text 2"
 
 [node name="Text 3" parent="." instance=ExtResource( 2 )]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -23.0
-margin_bottom = 0.0
+offset_top = -23.0
+offset_bottom = 0.0
 text = "Text 3"
 
 [node name="Text 4" parent="." instance=ExtResource( 2 )]
@@ -42,8 +42,8 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -30.5
-margin_top = -11.5
-margin_right = 29.5
-margin_bottom = 11.5
+offset_left = -30.5
+offset_top = -11.5
+offset_right = 29.5
+offset_bottom = 11.5
 text = "Text 4"

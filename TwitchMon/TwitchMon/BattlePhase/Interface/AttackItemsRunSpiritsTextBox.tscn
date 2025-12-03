@@ -1,46 +1,46 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Fonts/LuckiestGuy.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/LuckiestGuy.ttf" type="FontFile" id=1]
 [ext_resource path="res://OLDBattlePhase/TextBox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://OLDBattlePhase/AttackItemsRunSpiritsTextBox.gd" type="Script" id=3]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 14
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 14
 font_data = ExtResource( 1 )
 
 [node name="TextBox" instance=ExtResource( 2 )]
-margin_right = -85.48
-margin_bottom = -2.76
+offset_right = -85.48
+offset_bottom = -2.76
 script = ExtResource( 3 )
 
 [node name="Text 1" parent="." index="0"]
-margin_left = -14.5
-margin_right = 47.5
-custom_fonts/font = SubResource( 1 )
+offset_left = -14.5
+offset_right = 47.5
+theme_override_fonts/font = SubResource( 1 )
 text = "ATTACK"
 
 [node name="Text 2" parent="." index="1"]
-margin_top = -11.0
-margin_right = 64.0
-margin_bottom = 12.0
+offset_top = -11.0
+offset_right = 64.0
+offset_bottom = 12.0
 text = "ITEMS"
 
 [node name="Text 3" parent="." index="2"]
-margin_left = -14.5
-margin_top = -25.0
-margin_right = 45.5
+offset_left = -14.5
+offset_top = -25.0
+offset_right = 45.5
 text = "RUN"
 
 [node name="Text 4" parent="." index="3"]
-margin_left = -30.0
-margin_top = -11.0
-margin_right = 30.0
-margin_bottom = 12.0
-custom_fonts/font = SubResource( 2 )
+offset_left = -30.0
+offset_top = -11.0
+offset_right = 30.0
+offset_bottom = 12.0
+theme_override_fonts/font = SubResource( 2 )
 text = "SPIRITS"
 [connection signal="pressed" from="Text 1" to="." method="_on_Text_1_pressed"]
 [connection signal="pressed" from="Text 3" to="." method="_on_Text_3_pressed"]

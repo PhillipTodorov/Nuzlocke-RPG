@@ -6,16 +6,16 @@
 [node name="DialogueBox" type="Control"]
 anchor_right = 0.569
 anchor_bottom = 0.311
-margin_right = -0.319946
-margin_bottom = 0.0799866
+offset_right = -0.319946
+offset_bottom = 0.0799866
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Panel" type="Panel" parent="."]
-margin_right = 728.0
-margin_bottom = 224.0
+offset_right = 728.0
+offset_bottom = 224.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -23,28 +23,28 @@ __meta__ = {
 [node name="Text" type="Label" parent="."]
 anchor_right = 0.827
 anchor_bottom = 1.009
-margin_left = 3.0
-margin_top = 2.0
-margin_right = -0.0560913
-margin_bottom = -0.0160217
+offset_left = 3.0
+offset_top = 2.0
+offset_right = -0.0560913
+offset_bottom = -0.0160217
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Next" type="Button" parent="."]
-margin_left = 606.0
-margin_right = 726.0
-margin_bottom = 59.0
+offset_left = 606.0
+offset_right = 726.0
+offset_bottom = 59.0
 text = "Next"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Done" type="Button" parent="."]
-margin_left = 606.0
-margin_top = 63.0
-margin_right = 726.0
-margin_bottom = 122.0
+offset_left = 606.0
+offset_top = 63.0
+offset_right = 726.0
+offset_bottom = 122.0
 text = "Done"
 __meta__ = {
 "_edit_use_anchors_": false

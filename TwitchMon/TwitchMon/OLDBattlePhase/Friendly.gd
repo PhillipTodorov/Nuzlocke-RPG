@@ -1,11 +1,11 @@
 extends Node2D
 
-onready var battlePhase = get_parent()
+@onready var battlePhase = get_parent()
 
 signal friendly_action_queued
 
 func _ready():
-	$Interface/LightHeavySpecial.connect("action_queued", self, "friendly_action")
+	$Interface/LightHeavySpecial.connect("action_queued", Callable(self, "friendly_action"))
 	pass # Replace with function body.
 
 func friendly_action():

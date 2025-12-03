@@ -1,12 +1,12 @@
 extends Node
 
-onready var friendlyAttackInterface = get_parent().get_parent().get_node("Interface/LightHeavySpecial")
+@onready var friendlyAttackInterface = get_parent().get_parent().get_node("Interface/LightHeavySpecial")
 
 signal enemy_attack_queued(attack, damage)
 
 
 func _ready():
-	friendlyAttackInterface.connect("friendly_attack_queued", self, "randomAttackPicker")
+	friendlyAttackInterface.connect("friendly_attack_queued", Callable(self, "randomAttackPicker"))
 
 
 func randomAttackPicker(attack, damage):
@@ -16,7 +16,7 @@ func randomAttackPicker(attack, damage):
 	print("[EnemyAttackPicker.gd] rng picker: ", RNG_Picker)
 	
 	if RNG_Picker == 0:
-		emit_signal("enemy_attack_queued", "Light", 10)
+		emit_signal("enemy_attack_queued", "Light3D", 10)
 		
 	if RNG_Picker == 1:
 		emit_signal("enemy_attack_queued", "Heavy", 20)

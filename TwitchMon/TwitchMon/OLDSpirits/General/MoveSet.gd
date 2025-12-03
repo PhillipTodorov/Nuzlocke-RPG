@@ -1,8 +1,8 @@
 extends Node
 
-onready var moveSet = ["heavy", "light", "special"]
-onready var target #which player is being attacked (either enemy or friendly)
-onready var damage = get_parent().get_parent().damage
+@onready var moveSet = ["heavy", "light", "special"]
+@onready var target #which player is being attacked (either enemy or friendly)
+@onready var damage = get_parent().get_parent().damage
 
 func _ready():
 	var chosenMove = moveSet[randi() % 2]

@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://OLDBattlePhase/TextBox.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Fonts/LuckiestGuy.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Fonts/LuckiestGuy.ttf" type="FontFile" id=2]
 
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 11
 font_data = ExtResource( 2 )
 
@@ -20,5 +20,5 @@ text = "revive"
 text = "back"
 
 [node name="Text 4" parent="." index="3"]
-custom_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource( 1 )
 text = "Capture"

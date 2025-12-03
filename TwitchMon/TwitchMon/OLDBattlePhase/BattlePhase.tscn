@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/BattleScene/BattleSceneForest.png" type="Texture" id=1]
+[ext_resource path="res://assets/BattleScene/BattleSceneForest.png" type="Texture2D" id=1]
 [ext_resource path="res://OLDBattlePhase/BattlePhase.gd" type="Script" id=2]
 [ext_resource path="res://OLDBattlePhase/Friendly.gd" type="Script" id=3]
 [ext_resource path="res://OLDSpirits/Michael/Michael.tscn" type="PackedScene" id=4]
@@ -9,7 +9,7 @@
 [node name="BattlePhase" type="Node"]
 script = ExtResource( 2 )
 
-[node name="Background" type="Sprite" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2( 640.004, 359.441 )
 scale = Vector2( 1.60001, 1.50001 )
 texture = ExtResource( 1 )
@@ -22,10 +22,10 @@ anchor_left = 0.2
 anchor_top = 0.317
 anchor_right = 0.341
 anchor_bottom = 0.425
-margin_left = 256.0
-margin_top = 228.0
-margin_right = 436.0
-margin_bottom = 306.0
+offset_left = 256.0
+offset_top = 228.0
+offset_right = 436.0
+offset_bottom = 306.0
 
 [node name="Michael" parent="Friendly" instance=ExtResource( 4 )]
 position = Vector2( 246.047, 311.131 )

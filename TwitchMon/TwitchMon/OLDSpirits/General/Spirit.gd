@@ -1,11 +1,11 @@
 extends Node2D
 
-export onready var level: int
-export onready var health = 0
-export onready var speed: int
-onready var damage: int
+@export onready var level: int
+@export onready var health = 0
+@export onready var speed: int
+@onready var damage: int
 
-export var starting_stats: Resource
+@export var starting_stats: Resource
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

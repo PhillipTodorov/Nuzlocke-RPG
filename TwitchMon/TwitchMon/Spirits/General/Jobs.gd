@@ -1,11 +1,11 @@
 extends Node
 
 
-export var startingStats: Resource
+@export var startingStats: Resource
 
-onready var stats = $Stats
-onready var moves = $Moves
-onready var interface = get_tree().get_root().get_node("")
+@onready var stats = $Stats
+@onready var moves = $Moves
+@onready var interface = get_tree().get_root().get_node("")
 
 signal health_changed (new_health)
 signal max_health_changed (new_max_health)
@@ -20,17 +20,17 @@ func _ready():
 	#print("[Jobs.gd] ",startingStats.spirit_placeholder_dict)
 	
 	if get_parent().get_parent().name == "Friendly": 
-		connect("friendly_jobs_instantiated", get_tree().get_root().get_node_or_null("BattlePhase/DialogueHandler"), "friendly_stats_initialise")
+		connect("friendly_jobs_instantiated", Callable(get_tree().get_root().get_node_or_null("BattlePhase/DialogueHandler"), "friendly_stats_initialise"))
 		emit_signal("friendly_jobs_instantiated")
 	
 	elif get_parent().get_parent().name == "Enemy": 
-		connect("enemy_jobs_instantiated", get_tree().get_root().get_node_or_null("BattlePhase/DialogueHandler"), "enemy_stats_initialise")
+		connect("enemy_jobs_instantiated", Callable(get_tree().get_root().get_node_or_null("BattlePhase/DialogueHandler"), "enemy_stats_initialise"))
 		emit_signal("enemy_jobs_instantiated")
 
 
 func save():
 	var save_dict = {
-		"filename": get_filename(),
+		"filename": get_scene_file_path(),
 		"parent": get_parent().get_path(),
 		"current_health": stats.health,
 		"max_health": stats.max_health,

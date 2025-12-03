@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://OLDSpirits/General/Spirit.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/TwitchSpirits/xQc.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/TwitchSpirits/xQc.jpg" type="Texture2D" id=2]
 [ext_resource path="res://OLDSpirits/xQc/xQc.gd" type="Script" id=3]
 
 
@@ -10,7 +10,7 @@
 [node name="xQc" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Avatar" type="Sprite" parent="."]
+[node name="Avatar" type="Sprite2D" parent="."]
 position = Vector2( 95.4373, 136.794 )
 scale = Vector2( 0.373983, 0.373983 )
 texture = ExtResource( 2 )

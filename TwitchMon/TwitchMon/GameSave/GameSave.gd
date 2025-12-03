@@ -1,4 +1,3 @@
 extends Resource
 
-export(Array) var party
-
+@export var party: Array

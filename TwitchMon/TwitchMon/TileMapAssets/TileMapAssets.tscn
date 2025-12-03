@@ -1,486 +1,486 @@
 [gd_scene load_steps=97 format=2]
 
-[ext_resource path="res://assets/hexagontiles/Tiles/bushSnow.png" type="Texture" id=1]
-[ext_resource path="res://assets/hexagontiles/Tiles/flowerBlue.png" type="Texture" id=2]
-[ext_resource path="res://assets/hexagontiles/Tiles/flowerGreen.png" type="Texture" id=3]
-[ext_resource path="res://assets/hexagontiles/Tiles/flowerRed.png" type="Texture" id=4]
-[ext_resource path="res://assets/hexagontiles/Tiles/flowerWhite.png" type="Texture" id=5]
-[ext_resource path="res://assets/hexagontiles/Tiles/flowerYellow.png" type="Texture" id=6]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockStone_moss1.png" type="Texture" id=7]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineBlue_mid.png" type="Texture" id=8]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileGrass_full.png" type="Texture" id=9]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineGreen_high.png" type="Texture" id=10]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineAutumn_mid.png" type="Texture" id=11]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineAutumn_low.png" type="Texture" id=12]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineAutumn_high.png" type="Texture" id=13]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineBlue_high.png" type="Texture" id=14]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineBlue_low.png" type="Texture" id=15]
-[ext_resource path="res://assets/hexagontiles/Tiles/alienYellow.png" type="Texture" id=16]
-[ext_resource path="res://assets/hexagontiles/Tiles/bushMagic.png" type="Texture" id=17]
-[ext_resource path="res://assets/hexagontiles/Tiles/bushSand.png" type="Texture" id=18]
-[ext_resource path="res://assets/hexagontiles/Tiles/alienBeige.png" type="Texture" id=19]
-[ext_resource path="res://assets/hexagontiles/Tiles/alienBlue.png" type="Texture" id=20]
-[ext_resource path="res://assets/hexagontiles/Tiles/alienGreen.png" type="Texture" id=21]
-[ext_resource path="res://assets/hexagontiles/Tiles/alienPink.png" type="Texture" id=22]
-[ext_resource path="res://assets/hexagontiles/Tiles/bushAutumn.png" type="Texture" id=23]
-[ext_resource path="res://assets/hexagontiles/Tiles/bushDirt.png" type="Texture" id=24]
-[ext_resource path="res://assets/hexagontiles/Tiles/bushGrass.png" type="Texture" id=25]
-[ext_resource path="res://assets/hexagontiles/Tiles/hillAutumn.png" type="Texture" id=26]
-[ext_resource path="res://assets/hexagontiles/Tiles/hillDirt.png" type="Texture" id=27]
-[ext_resource path="res://assets/hexagontiles/Tiles/hillGrass.png" type="Texture" id=28]
-[ext_resource path="res://assets/hexagontiles/Tiles/hillMagic.png" type="Texture" id=29]
-[ext_resource path="res://assets/hexagontiles/Tiles/hillSand.png" type="Texture" id=30]
-[ext_resource path="res://assets/hexagontiles/Tiles/hillSnow.png" type="Texture" id=31]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileLava.png" type="Texture" id=32]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileLava_full.png" type="Texture" id=33]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileLava_tile.png" type="Texture" id=34]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileMagic_tile.png" type="Texture" id=35]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockSnow_1.png" type="Texture" id=36]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileRock.png" type="Texture" id=37]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineGreen_low.png" type="Texture" id=38]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileSnow.png" type="Texture" id=39]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileSnow_tile.png" type="Texture" id=40]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileWater_tile.png" type="Texture" id=41]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeAutumn_high.png" type="Texture" id=42]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeCactus_2.png" type="Texture" id=43]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeCactus_3.png" type="Texture" id=44]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeGreen_high.png" type="Texture" id=45]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileRock_full.png" type="Texture" id=46]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeGreen_low.png" type="Texture" id=47]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileStone_bridge.png" type="Texture" id=48]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileWater_full.png" type="Texture" id=49]
-[ext_resource path="res://assets/hexagontiles/Tiles/smallRockStone.png" type="Texture" id=50]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileWater.png" type="Texture" id=51]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeBlue_mid.png" type="Texture" id=52]
-[ext_resource path="res://assets/hexagontiles/Tiles/pineGreen_mid.png" type="Texture" id=53]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileDirt_tile.png" type="Texture" id=54]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockStone_moss2.png" type="Texture" id=55]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileGrass.png" type="Texture" id=56]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileMagic.png" type="Texture" id=57]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileSnow_full.png" type="Texture" id=58]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeAutumn_low.png" type="Texture" id=59]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeBlue_high.png" type="Texture" id=60]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileStone_full.png" type="Texture" id=61]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeBlue_low.png" type="Texture" id=62]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeGreen_mid.png" type="Texture" id=63]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileStone.png" type="Texture" id=64]
-[ext_resource path="res://assets/hexagontiles/Tiles/waveLava.png" type="Texture" id=65]
-[ext_resource path="res://assets/hexagontiles/Tiles/waveWater.png" type="Texture" id=66]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt.png" type="Texture" id=67]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockSnow_2.png" type="Texture" id=68]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt_moss2.png" type="Texture" id=69]
-[ext_resource path="res://assets/hexagontiles/Tiles/smallRockDirt.png" type="Texture" id=70]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt_moss1.png" type="Texture" id=71]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn_tile.png" type="Texture" id=72]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileDirt_full.png" type="Texture" id=73]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileRock_tile.png" type="Texture" id=74]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileSand_tile.png" type="Texture" id=75]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileSand_full.png" type="Texture" id=76]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileStone_tile.png" type="Texture" id=77]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileWater_shadow.png" type="Texture" id=78]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileWood_bridge.png" type="Texture" id=79]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileGrass_tile.png" type="Texture" id=80]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt_moss3.png" type="Texture" id=81]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileSand.png" type="Texture" id=82]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeAutumn_mid.png" type="Texture" id=83]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileMagic_full.png" type="Texture" id=84]
-[ext_resource path="res://assets/hexagontiles/Tiles/treeCactus_1.png" type="Texture" id=85]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockSnow_3.png" type="Texture" id=86]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockStone.png" type="Texture" id=87]
-[ext_resource path="res://assets/hexagontiles/Tiles/rockStone_moss3.png" type="Texture" id=88]
-[ext_resource path="res://assets/hexagontiles/Tiles/smallRockGrass.png" type="Texture" id=89]
-[ext_resource path="res://assets/hexagontiles/Tiles/smallRockSnow.png" type="Texture" id=90]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn.png" type="Texture" id=91]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn_full.png" type="Texture" id=92]
-[ext_resource path="res://assets/hexagontiles/Tiles/tileDirt.png" type="Texture" id=93]
-[ext_resource path="res://assets/TileGrass/tileGrassTwoTileSize.png" type="Texture" id=94]
-[ext_resource path="res://assets/TileGrass/tileGrass.png" type="Texture" id=95]
-[ext_resource path="res://assets/TileGrass/tileGrassFront.png" type="Texture" id=96]
+[ext_resource path="res://assets/hexagontiles/Tiles/bushSnow.png" type="Texture2D" id=1]
+[ext_resource path="res://assets/hexagontiles/Tiles/flowerBlue.png" type="Texture2D" id=2]
+[ext_resource path="res://assets/hexagontiles/Tiles/flowerGreen.png" type="Texture2D" id=3]
+[ext_resource path="res://assets/hexagontiles/Tiles/flowerRed.png" type="Texture2D" id=4]
+[ext_resource path="res://assets/hexagontiles/Tiles/flowerWhite.png" type="Texture2D" id=5]
+[ext_resource path="res://assets/hexagontiles/Tiles/flowerYellow.png" type="Texture2D" id=6]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockStone_moss1.png" type="Texture2D" id=7]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineBlue_mid.png" type="Texture2D" id=8]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileGrass_full.png" type="Texture2D" id=9]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineGreen_high.png" type="Texture2D" id=10]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineAutumn_mid.png" type="Texture2D" id=11]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineAutumn_low.png" type="Texture2D" id=12]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineAutumn_high.png" type="Texture2D" id=13]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineBlue_high.png" type="Texture2D" id=14]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineBlue_low.png" type="Texture2D" id=15]
+[ext_resource path="res://assets/hexagontiles/Tiles/alienYellow.png" type="Texture2D" id=16]
+[ext_resource path="res://assets/hexagontiles/Tiles/bushMagic.png" type="Texture2D" id=17]
+[ext_resource path="res://assets/hexagontiles/Tiles/bushSand.png" type="Texture2D" id=18]
+[ext_resource path="res://assets/hexagontiles/Tiles/alienBeige.png" type="Texture2D" id=19]
+[ext_resource path="res://assets/hexagontiles/Tiles/alienBlue.png" type="Texture2D" id=20]
+[ext_resource path="res://assets/hexagontiles/Tiles/alienGreen.png" type="Texture2D" id=21]
+[ext_resource path="res://assets/hexagontiles/Tiles/alienPink.png" type="Texture2D" id=22]
+[ext_resource path="res://assets/hexagontiles/Tiles/bushAutumn.png" type="Texture2D" id=23]
+[ext_resource path="res://assets/hexagontiles/Tiles/bushDirt.png" type="Texture2D" id=24]
+[ext_resource path="res://assets/hexagontiles/Tiles/bushGrass.png" type="Texture2D" id=25]
+[ext_resource path="res://assets/hexagontiles/Tiles/hillAutumn.png" type="Texture2D" id=26]
+[ext_resource path="res://assets/hexagontiles/Tiles/hillDirt.png" type="Texture2D" id=27]
+[ext_resource path="res://assets/hexagontiles/Tiles/hillGrass.png" type="Texture2D" id=28]
+[ext_resource path="res://assets/hexagontiles/Tiles/hillMagic.png" type="Texture2D" id=29]
+[ext_resource path="res://assets/hexagontiles/Tiles/hillSand.png" type="Texture2D" id=30]
+[ext_resource path="res://assets/hexagontiles/Tiles/hillSnow.png" type="Texture2D" id=31]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileLava.png" type="Texture2D" id=32]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileLava_full.png" type="Texture2D" id=33]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileLava_tile.png" type="Texture2D" id=34]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileMagic_tile.png" type="Texture2D" id=35]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockSnow_1.png" type="Texture2D" id=36]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileRock.png" type="Texture2D" id=37]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineGreen_low.png" type="Texture2D" id=38]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileSnow.png" type="Texture2D" id=39]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileSnow_tile.png" type="Texture2D" id=40]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileWater_tile.png" type="Texture2D" id=41]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeAutumn_high.png" type="Texture2D" id=42]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeCactus_2.png" type="Texture2D" id=43]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeCactus_3.png" type="Texture2D" id=44]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeGreen_high.png" type="Texture2D" id=45]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileRock_full.png" type="Texture2D" id=46]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeGreen_low.png" type="Texture2D" id=47]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileStone_bridge.png" type="Texture2D" id=48]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileWater_full.png" type="Texture2D" id=49]
+[ext_resource path="res://assets/hexagontiles/Tiles/smallRockStone.png" type="Texture2D" id=50]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileWater.png" type="Texture2D" id=51]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeBlue_mid.png" type="Texture2D" id=52]
+[ext_resource path="res://assets/hexagontiles/Tiles/pineGreen_mid.png" type="Texture2D" id=53]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileDirt_tile.png" type="Texture2D" id=54]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockStone_moss2.png" type="Texture2D" id=55]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileGrass.png" type="Texture2D" id=56]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileMagic.png" type="Texture2D" id=57]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileSnow_full.png" type="Texture2D" id=58]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeAutumn_low.png" type="Texture2D" id=59]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeBlue_high.png" type="Texture2D" id=60]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileStone_full.png" type="Texture2D" id=61]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeBlue_low.png" type="Texture2D" id=62]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeGreen_mid.png" type="Texture2D" id=63]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileStone.png" type="Texture2D" id=64]
+[ext_resource path="res://assets/hexagontiles/Tiles/waveLava.png" type="Texture2D" id=65]
+[ext_resource path="res://assets/hexagontiles/Tiles/waveWater.png" type="Texture2D" id=66]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt.png" type="Texture2D" id=67]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockSnow_2.png" type="Texture2D" id=68]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt_moss2.png" type="Texture2D" id=69]
+[ext_resource path="res://assets/hexagontiles/Tiles/smallRockDirt.png" type="Texture2D" id=70]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt_moss1.png" type="Texture2D" id=71]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn_tile.png" type="Texture2D" id=72]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileDirt_full.png" type="Texture2D" id=73]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileRock_tile.png" type="Texture2D" id=74]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileSand_tile.png" type="Texture2D" id=75]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileSand_full.png" type="Texture2D" id=76]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileStone_tile.png" type="Texture2D" id=77]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileWater_shadow.png" type="Texture2D" id=78]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileWood_bridge.png" type="Texture2D" id=79]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileGrass_tile.png" type="Texture2D" id=80]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockDirt_moss3.png" type="Texture2D" id=81]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileSand.png" type="Texture2D" id=82]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeAutumn_mid.png" type="Texture2D" id=83]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileMagic_full.png" type="Texture2D" id=84]
+[ext_resource path="res://assets/hexagontiles/Tiles/treeCactus_1.png" type="Texture2D" id=85]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockSnow_3.png" type="Texture2D" id=86]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockStone.png" type="Texture2D" id=87]
+[ext_resource path="res://assets/hexagontiles/Tiles/rockStone_moss3.png" type="Texture2D" id=88]
+[ext_resource path="res://assets/hexagontiles/Tiles/smallRockGrass.png" type="Texture2D" id=89]
+[ext_resource path="res://assets/hexagontiles/Tiles/smallRockSnow.png" type="Texture2D" id=90]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn.png" type="Texture2D" id=91]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileAutumn_full.png" type="Texture2D" id=92]
+[ext_resource path="res://assets/hexagontiles/Tiles/tileDirt.png" type="Texture2D" id=93]
+[ext_resource path="res://assets/TileGrass/tileGrassTwoTileSize.png" type="Texture2D" id=94]
+[ext_resource path="res://assets/TileGrass/tileGrass.png" type="Texture2D" id=95]
+[ext_resource path="res://assets/TileGrass/tileGrassFront.png" type="Texture2D" id=96]
 
 
 [node name="Node2D" type="Node2D"]
 
-[node name="alienBeige" type="Sprite" parent="."]
+[node name="alienBeige" type="Sprite2D" parent="."]
 position = Vector2( 720, 368 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 19 )
 
-[node name="alienBlue" type="Sprite" parent="."]
+[node name="alienBlue" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 20 )
 
-[node name="alienGreen" type="Sprite" parent="."]
+[node name="alienGreen" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 21 )
 
-[node name="alienPink" type="Sprite" parent="."]
+[node name="alienPink" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 22 )
 
-[node name="alienYellow" type="Sprite" parent="."]
+[node name="alienYellow" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 16 )
 
-[node name="bushAutumn" type="Sprite" parent="."]
+[node name="bushAutumn" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 23 )
 
-[node name="bushDirt" type="Sprite" parent="."]
+[node name="bushDirt" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 24 )
 
-[node name="bushGrass" type="Sprite" parent="."]
+[node name="bushGrass" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 25 )
 
-[node name="bushMagic" type="Sprite" parent="."]
+[node name="bushMagic" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 17 )
 
-[node name="bushSand" type="Sprite" parent="."]
+[node name="bushSand" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 18 )
 
-[node name="bushSnow" type="Sprite" parent="."]
+[node name="bushSnow" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 1 )
 
-[node name="flowerBlue" type="Sprite" parent="."]
+[node name="flowerBlue" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 2 )
 
-[node name="flowerGreen" type="Sprite" parent="."]
+[node name="flowerGreen" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 3 )
 
-[node name="flowerRed" type="Sprite" parent="."]
+[node name="flowerRed" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 4 )
 
-[node name="flowerWhite" type="Sprite" parent="."]
+[node name="flowerWhite" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 5 )
 
-[node name="flowerYellow" type="Sprite" parent="."]
+[node name="flowerYellow" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 6 )
 
-[node name="hillAutumn" type="Sprite" parent="."]
+[node name="hillAutumn" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 26 )
 
-[node name="hillDirt" type="Sprite" parent="."]
+[node name="hillDirt" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 27 )
 
-[node name="hillGrass" type="Sprite" parent="."]
+[node name="hillGrass" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 28 )
 
-[node name="hillMagic" type="Sprite" parent="."]
+[node name="hillMagic" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 29 )
 
-[node name="hillSand" type="Sprite" parent="."]
+[node name="hillSand" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 30 )
 
-[node name="hillSnow" type="Sprite" parent="."]
+[node name="hillSnow" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 31 )
 
-[node name="pineAutumn_high" type="Sprite" parent="."]
+[node name="pineAutumn_high" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 13 )
 
-[node name="pineAutumn_low" type="Sprite" parent="."]
+[node name="pineAutumn_low" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 12 )
 
-[node name="pineAutumn_mid" type="Sprite" parent="."]
+[node name="pineAutumn_mid" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 11 )
 
-[node name="pineBlue_high" type="Sprite" parent="."]
+[node name="pineBlue_high" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 14 )
 
-[node name="pineBlue_low" type="Sprite" parent="."]
+[node name="pineBlue_low" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 15 )
 
-[node name="pineBlue_mid" type="Sprite" parent="."]
+[node name="pineBlue_mid" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 8 )
 
-[node name="pineGreen_high" type="Sprite" parent="."]
+[node name="pineGreen_high" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 10 )
 
-[node name="pineGreen_low" type="Sprite" parent="."]
+[node name="pineGreen_low" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 38 )
 
-[node name="pineGreen_mid" type="Sprite" parent="."]
+[node name="pineGreen_mid" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 53 )
 
-[node name="rockDirt" type="Sprite" parent="."]
+[node name="rockDirt" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 67 )
 
-[node name="rockDirt_moss1" type="Sprite" parent="."]
+[node name="rockDirt_moss1" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 71 )
 
-[node name="rockDirt_moss2" type="Sprite" parent="."]
+[node name="rockDirt_moss2" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 69 )
 
-[node name="rockDirt_moss3" type="Sprite" parent="."]
+[node name="rockDirt_moss3" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 81 )
 
-[node name="rockSnow_1" type="Sprite" parent="."]
+[node name="rockSnow_1" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 36 )
 
-[node name="rockSnow_2" type="Sprite" parent="."]
+[node name="rockSnow_2" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 68 )
 
-[node name="rockSnow_3" type="Sprite" parent="."]
+[node name="rockSnow_3" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 86 )
 
-[node name="rockStone" type="Sprite" parent="."]
+[node name="rockStone" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 87 )
 
-[node name="rockStone_moss1" type="Sprite" parent="."]
+[node name="rockStone_moss1" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 7 )
 
-[node name="rockStone_moss2" type="Sprite" parent="."]
+[node name="rockStone_moss2" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 55 )
 
-[node name="rockStone_moss3" type="Sprite" parent="."]
+[node name="rockStone_moss3" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 88 )
 
-[node name="smallRockDirt" type="Sprite" parent="."]
+[node name="smallRockDirt" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 70 )
 
-[node name="smallRockGrass" type="Sprite" parent="."]
+[node name="smallRockGrass" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 89 )
 
-[node name="smallRockSnow" type="Sprite" parent="."]
+[node name="smallRockSnow" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 90 )
 
-[node name="smallRockStone" type="Sprite" parent="."]
+[node name="smallRockStone" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 50 )
 
-[node name="tileAutumn" type="Sprite" parent="."]
+[node name="tileAutumn" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 91 )
 
-[node name="tileAutumn_full" type="Sprite" parent="."]
+[node name="tileAutumn_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 92 )
 
-[node name="tileAutumn_tile" type="Sprite" parent="."]
+[node name="tileAutumn_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 72 )
 
-[node name="tileDirt" type="Sprite" parent="."]
+[node name="tileDirt" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 93 )
 
-[node name="tileDirt_full" type="Sprite" parent="."]
+[node name="tileDirt_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 73 )
 
-[node name="tileDirt_tile" type="Sprite" parent="."]
+[node name="tileDirt_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 54 )
 
-[node name="tileGrass" type="Sprite" parent="."]
+[node name="tileGrass" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 56 )
 
-[node name="tileGrass_full" type="Sprite" parent="."]
+[node name="tileGrass_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 9 )
 
-[node name="tileGrass_tile" type="Sprite" parent="."]
+[node name="tileGrass_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 80 )
 
-[node name="tileLava" type="Sprite" parent="."]
+[node name="tileLava" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 32 )
 
-[node name="tileLava_full" type="Sprite" parent="."]
+[node name="tileLava_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 33 )
 
-[node name="tileLava_tile" type="Sprite" parent="."]
+[node name="tileLava_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 34 )
 
-[node name="tileMagic" type="Sprite" parent="."]
+[node name="tileMagic" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 57 )
 
-[node name="tileMagic_full" type="Sprite" parent="."]
+[node name="tileMagic_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 84 )
 
-[node name="tileMagic_tile" type="Sprite" parent="."]
+[node name="tileMagic_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 35 )
 
-[node name="tileRock" type="Sprite" parent="."]
+[node name="tileRock" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 37 )
 
-[node name="tileRock_full" type="Sprite" parent="."]
+[node name="tileRock_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 46 )
 
-[node name="tileRock_tile" type="Sprite" parent="."]
+[node name="tileRock_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 74 )
 
-[node name="tileSand" type="Sprite" parent="."]
+[node name="tileSand" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 82 )
 
-[node name="tileSand_full" type="Sprite" parent="."]
+[node name="tileSand_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 76 )
 
-[node name="tileSand_tile" type="Sprite" parent="."]
+[node name="tileSand_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 75 )
 
-[node name="tileSnow" type="Sprite" parent="."]
+[node name="tileSnow" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 39 )
 
-[node name="tileSnow_full" type="Sprite" parent="."]
+[node name="tileSnow_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 58 )
 
-[node name="tileSnow_tile" type="Sprite" parent="."]
+[node name="tileSnow_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 40 )
 
-[node name="tileStone" type="Sprite" parent="."]
+[node name="tileStone" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 64 )
 
-[node name="tileStone_bridge" type="Sprite" parent="."]
+[node name="tileStone_bridge" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 48 )
 
-[node name="tileStone_full" type="Sprite" parent="."]
+[node name="tileStone_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 61 )
 
-[node name="tileStone_tile" type="Sprite" parent="."]
+[node name="tileStone_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 77 )
 
-[node name="tileWater" type="Sprite" parent="."]
+[node name="tileWater" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 51 )
 
-[node name="tileWater_full" type="Sprite" parent="."]
+[node name="tileWater_full" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 49 )
 
-[node name="tileWater_shadow" type="Sprite" parent="."]
+[node name="tileWater_shadow" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 78 )
 
-[node name="tileWater_tile" type="Sprite" parent="."]
+[node name="tileWater_tile" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 41 )
 
-[node name="tileWood_bridge" type="Sprite" parent="."]
+[node name="tileWood_bridge" type="Sprite2D" parent="."]
 position = Vector2( 567.609, 349.619 )
 texture = ExtResource( 79 )
 
-[node name="treeAutumn_high" type="Sprite" parent="."]
+[node name="treeAutumn_high" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 42 )
 
-[node name="treeAutumn_low" type="Sprite" parent="."]
+[node name="treeAutumn_low" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 59 )
 
-[node name="treeAutumn_mid" type="Sprite" parent="."]
+[node name="treeAutumn_mid" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 83 )
 
-[node name="treeBlue_high" type="Sprite" parent="."]
+[node name="treeBlue_high" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 60 )
 
-[node name="treeBlue_low" type="Sprite" parent="."]
+[node name="treeBlue_low" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 62 )
 
-[node name="treeBlue_mid" type="Sprite" parent="."]
+[node name="treeBlue_mid" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 52 )
 
-[node name="treeCactus_1" type="Sprite" parent="."]
+[node name="treeCactus_1" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 85 )
 
-[node name="treeCactus_2" type="Sprite" parent="."]
+[node name="treeCactus_2" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 43 )
 
-[node name="treeCactus_3" type="Sprite" parent="."]
+[node name="treeCactus_3" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 44 )
 
-[node name="treeGreen_high" type="Sprite" parent="."]
+[node name="treeGreen_high" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 45 )
 
-[node name="treeGreen_low" type="Sprite" parent="."]
+[node name="treeGreen_low" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 47 )
 
-[node name="treeGreen_mid" type="Sprite" parent="."]
+[node name="treeGreen_mid" type="Sprite2D" parent="."]
 position = Vector2( 720.794, 343.666 )
 texture = ExtResource( 63 )
 
-[node name="waveLava" type="Sprite" parent="."]
+[node name="waveLava" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 65 )
 
-[node name="waveWater" type="Sprite" parent="."]
+[node name="waveWater" type="Sprite2D" parent="."]
 position = Vector2( 720, 352 )
 texture = ExtResource( 66 )
 
-[node name="tileGrassTwoTileSize" type="Sprite" parent="."]
+[node name="tileGrassTwoTileSize" type="Sprite2D" parent="."]
 position = Vector2( 533.258, 562.409 )
 texture = ExtResource( 94 )
 
-[node name="tileGrass2" type="Sprite" parent="."]
+[node name="tileGrass2" type="Sprite2D" parent="."]
 position = Vector2( 693.821, 436.955 )
 texture = ExtResource( 95 )
 
-[node name="tileGrassFront" type="Sprite" parent="."]
+[node name="tileGrassFront" type="Sprite2D" parent="."]
 position = Vector2( 621.306, 472.539 )
 texture = ExtResource( 96 )

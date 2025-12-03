@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var Spirit = get_node("Spirit")
+@onready var Spirit = get_node("Spirit")
 
 func _ready():
 	Spirit.health = 100

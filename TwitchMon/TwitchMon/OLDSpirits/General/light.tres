@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource( 1 )
-skill_name = "Light"
+skill_name = "Light3D"
 skill_description = "Does less damage, has higher chance to hit than heavy attack"
 base_damage = 10
 success_chance = 0.95

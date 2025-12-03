@@ -1,14 +1,14 @@
 extends Node
 
-onready var friendlyAttackInterface = get_parent().get_node("Interface/LightHeavySpecial")
-onready var enemyAttackPicker = get_parent().get_node("Enemy/EnemyAttackPicker")
+@onready var friendlyAttackInterface = get_parent().get_node("Interface/LightHeavySpecial")
+@onready var enemyAttackPicker = get_parent().get_node("Enemy/EnemyAttackPicker")
 
-onready var dialogue_box = get_parent().get_node("DialogueBox")
-onready var interface = get_parent().get_node("Interface")
-onready var scene_handler = get_parent().get_node("SceneHandler")
+@onready var dialogue_box = get_parent().get_node("DialogueBox")
+@onready var interface = get_parent().get_node("Interface")
+@onready var scene_handler = get_parent().get_node("SceneHandler")
 
 
-export (String, FILE, "*.json") var dialogue_file_path: String
+@export var dialogue_file_path: String # (String, FILE, "*.json")
 
 var enemy_stats = ""
 var friendly_stats = ""
@@ -22,17 +22,17 @@ var stats_counter = 0
 var scene_dialogue_dict: Dictionary
 
 func _ready():
-	dialogue_box.connect("line_displayed", self, "dialogue_logic")
+	dialogue_box.connect("line_displayed", Callable(self, "dialogue_logic"))
 	interface.get_node("AttackItemsRunSpirits").connect("attack_items_run_spirits_pressed",
 	self, "attack_items_run_spirits_pressed_dialogue_logic")
-	friendlyAttackInterface.connect("friendly_attack_queued", self, "_save_friendly_attack_name")
-	enemyAttackPicker.connect("enemy_attack_queued", self, "_save_enemy_attack_name")
+	friendlyAttackInterface.connect("friendly_attack_queued", Callable(self, "_save_friendly_attack_name"))
+	enemyAttackPicker.connect("enemy_attack_queued", Callable(self, "_save_enemy_attack_name"))
 	
 
 
 func enemy_stats_initialise():
 	enemy_stats = get_tree().get_root().get_node("BattlePhase/Enemy/").get_child(1).get_node("Jobs/Stats")
-	enemy_stats.connect("Enemy_health_depleted", self, "Enemy_health_depleted_Dialogue")
+	enemy_stats.connect("Enemy_health_depleted", Callable(self, "Enemy_health_depleted_Dialogue"))
 	stats_counter += 1
 	if stats_counter == 2:
 		dialogue_start()
@@ -41,7 +41,7 @@ func enemy_stats_initialise():
 
 func friendly_stats_initialise():	
 	friendly_stats = get_tree().get_root().get_node("BattlePhase/Friendly/").get_child(0).get_node("Jobs/Stats")
-	friendly_stats.connect("Friendly_health_depleted", self, "Friendly_health_depleted_Dialogue")
+	friendly_stats.connect("Friendly_health_depleted", Callable(self, "Friendly_health_depleted_Dialogue"))
 	stats_counter += 1
 	if stats_counter == 2:
 		dialogue_start()

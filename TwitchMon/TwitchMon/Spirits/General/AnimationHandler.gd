@@ -1,19 +1,19 @@
 extends Node
 
-onready var move_tween = get_parent().get_node("Tween")
-onready var icon = get_parent().get_node("icon")
+@onready var move_tween = get_parent().get_node("Tween")
+@onready var icon = get_parent().get_node("icon")
 
 #if even then 'move_up' should 
 #be executed, otherwise,
 #execute 'move_down'
-onready var tween_state = 0 
-onready var rng = RandomNumberGenerator.new()
+@onready var tween_state = 0 
+@onready var rng = RandomNumberGenerator.new()
 
 
 
 func _ready():
-	move_tween.connect("tween_all_completed", self, "levitate")
-	yield(get_tree().create_timer(rng.randf()), "timeout")
+	move_tween.connect("tween_all_completed", Callable(self, "levitate"))
+	await get_tree().create_timer(rng.randf()).timeout
 	levitate()
 	pass
 

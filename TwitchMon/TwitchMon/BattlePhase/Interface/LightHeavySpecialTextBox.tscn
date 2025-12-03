@@ -1,14 +1,14 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Fonts/LuckiestGuy.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/LuckiestGuy.ttf" type="FontFile" id=1]
 [ext_resource path="res://OLDBattlePhase/TextBox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://OLDBattlePhase/LightHeavySpecialTextBox.gd" type="Script" id=3]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 14
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 15
 font_data = ExtResource( 1 )
 
@@ -16,7 +16,7 @@ font_data = ExtResource( 1 )
 script = ExtResource( 3 )
 
 [node name="Text 1" parent="." index="0"]
-custom_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource( 1 )
 text = "SPECIAL"
 
 [node name="Text 2" parent="." index="1"]
@@ -26,7 +26,7 @@ text = "LIGHT"
 text = "BACK"
 
 [node name="Text 4" parent="." index="3"]
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource( 2 )
 text = "HEAVY"
 [connection signal="pressed" from="Text 1" to="." method="_on_Text_1_pressed"]
 [connection signal="pressed" from="Text 2" to="." method="_on_Text_2_pressed"]

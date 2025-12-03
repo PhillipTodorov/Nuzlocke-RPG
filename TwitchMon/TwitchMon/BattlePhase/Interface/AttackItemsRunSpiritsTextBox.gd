@@ -16,6 +16,6 @@ func _on_Attack_pressed():
 
 func _on_Run_pressed():
 	emit_signal("run_pressed")
-	get_tree().change_scene("res://Main/Main.tscn")
+	get_tree().change_scene_to_file("res://Main/Main.tscn")
 	emit_signal("attack_items_run_spirits_pressed")
 	pass # Replace with function body.

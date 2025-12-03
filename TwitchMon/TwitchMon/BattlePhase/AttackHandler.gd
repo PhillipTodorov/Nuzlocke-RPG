@@ -1,16 +1,16 @@
 extends Node
 
-onready var friendlyAttackInterface = get_parent().get_node("Interface/LightHeavySpecial")
-onready var enemyAttackPicker = get_parent().get_node("Enemy/EnemyAttackPicker")
+@onready var friendlyAttackInterface = get_parent().get_node("Interface/LightHeavySpecial")
+@onready var enemyAttackPicker = get_parent().get_node("Enemy/EnemyAttackPicker")
 
-onready var friendly_attack: String
-onready var enemy_attack: String
-onready var friendly_damage: int
-onready var enemy_damage: int
+@onready var friendly_attack: String
+@onready var enemy_attack: String
+@onready var friendly_damage: int
+@onready var enemy_damage: int
 
 func _ready():
-	friendlyAttackInterface.connect("friendly_attack_queued", self, "_save_friendly_attack")
-	enemyAttackPicker.connect("enemy_attack_queued", self, "_save_enemy_attack")
+	friendlyAttackInterface.connect("friendly_attack_queued", Callable(self, "_save_friendly_attack"))
+	enemyAttackPicker.connect("enemy_attack_queued", Callable(self, "_save_enemy_attack"))
 	pass
 	
 

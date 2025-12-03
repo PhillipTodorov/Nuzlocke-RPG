@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://assets/BattleScene/BattleSceneForest.png" type="Texture" id=1]
+[ext_resource path="res://assets/BattleScene/BattleSceneForest.png" type="Texture2D" id=1]
 [ext_resource path="res://BattlePhase/Interface/Interface.tscn" type="PackedScene" id=2]
 [ext_resource path="res://BattlePhase/AttackHandler.gd" type="Script" id=3]
 [ext_resource path="res://BattlePhase/Enemy.gd" type="Script" id=4]
@@ -26,7 +26,7 @@ dialogue_file_path = "res://Dialogue/battlephase_dialogue.json"
 [node name="SceneHandler" type="Node" parent="."]
 script = ExtResource( 9 )
 
-[node name="Background" type="Sprite" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2( 640, 360 )
 scale = Vector2( 1.6, 1.5 )
 texture = ExtResource( 1 )
@@ -48,16 +48,16 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 130.199
-margin_top = 84.9517
-margin_right = 310.199
-margin_bottom = 162.952
+offset_left = 130.199
+offset_top = 84.9517
+offset_right = 310.199
+offset_bottom = 162.952
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = null
 
 [node name="DialogueBox" parent="." instance=ExtResource( 7 )]
-margin_left = 280.0
-margin_top = 496.0
-margin_right = 1008.0
-margin_bottom = 720.0
+offset_left = 280.0
+offset_top = 496.0
+offset_right = 1008.0
+offset_bottom = 720.0

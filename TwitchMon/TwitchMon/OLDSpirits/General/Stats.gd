@@ -1,7 +1,7 @@
 extends Node
 
 var speed: int
-var max_health: int setget set_max_health
+var max_health: int: set = set_max_health
 var health: int 
 
 func _ready():

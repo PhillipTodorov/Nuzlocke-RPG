@@ -1,18 +1,18 @@
 extends Node
 
-onready var RNG_number: float
-onready var friendly = get_node("Friendly").get_child(1)
-onready var enemy = get_node("Enemy")
+@onready var RNG_number: float
+@onready var friendly = get_node("Friendly").get_child(1)
+@onready var enemy = get_node("Enemy")
 
-onready var lightheavyspecial = get_node("Friendly/Interface/LightHeavySpecial")
+@onready var lightheavyspecial = get_node("Friendly/Interface/LightHeavySpecial")
 
-onready var michael = "res://Spirits/Michael/Michael.tscn"
-onready var xqc = "res://Spirits/xQc/xQc.tscn"
-onready var poki = "res://Spirits/Poki/Poki.tscn"
+@onready var michael = "res://Spirits/Michael/Michael.tscn"
+@onready var xqc = "res://Spirits/xQc/xQc.tscn"
+@onready var poki = "res://Spirits/Poki/Poki.tscn"
 
-onready var list_of_spirits = {michael: 23, xqc: 7, poki: 3}
+@onready var list_of_spirits = {michael: 23, xqc: 7, poki: 3}
 
-onready var tasks: int
+@onready var tasks: int
 
 func _ready():
 	tasks = 0
@@ -21,7 +21,7 @@ func _ready():
 	list_of_spirits = list_of_spirits_cumulative_odds(list_of_spirits)
 	print(list_of_spirits)
 	twitchmon_randomizer()
-	$Friendly.connect("friendly_action_queued", self, "compare_speed")
+	$Friendly.connect("friendly_action_queued", Callable(self, "compare_speed"))
 	#TODO $Enemy.connect("enemy_action_queued", self, "compare_speed")
 
 
@@ -48,7 +48,7 @@ func twitchmon_randomizer():
 	for spirit in list_of_spirits:
 		if list_of_spirits[spirit] > RNG_number:
 			print(spirit)
-			$Enemy.add_child(load(spirit).instance())
+			$Enemy.add_child(load(spirit).instantiate())
 			break
 
 

@@ -1,6 +1,6 @@
 extends NinePatchRect
 
-onready var attackItemsRun = get_parent().get_node("AttackItemsRunSpirits")
+@onready var attackItemsRun = get_parent().get_node("AttackItemsRunSpirits")
 var damageQueued = 0
 
 signal action_queued

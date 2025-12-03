@@ -10,14 +10,14 @@ script = ExtResource( 1 )
 starting_stats = ExtResource( 2 )
 
 [node name="HealthBar" parent="." instance=ExtResource( 3 )]
-margin_left = 1.25995
-margin_top = 200.327
-margin_right = 41.2599
-margin_bottom = 240.327
+offset_left = 1.25995
+offset_top = 200.327
+offset_right = 41.2599
+offset_bottom = 240.327
 
 [node name="ReferenceRect" type="ReferenceRect" parent="."]
-margin_right = 190.0
-margin_bottom = 206.0
+offset_right = 190.0
+offset_bottom = 206.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -26,20 +26,20 @@ __meta__ = {
 starting_skills = [  ]
 
 [node name="Level" type="Label" parent="."]
-margin_left = -0.967299
-margin_top = 257.79
-margin_right = 39.0327
-margin_bottom = 271.79
+offset_left = -0.967299
+offset_top = 257.79
+offset_right = 39.0327
+offset_bottom = 271.79
 text = "Level: "
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Speed" type="Label" parent="."]
-margin_left = -0.967299
-margin_top = 270.79
-margin_right = 41.0327
-margin_bottom = 284.79
+offset_left = -0.967299
+offset_top = 270.79
+offset_right = 41.0327
+offset_bottom = 284.79
 text = "Speed:"
 __meta__ = {
 "_edit_use_anchors_": false

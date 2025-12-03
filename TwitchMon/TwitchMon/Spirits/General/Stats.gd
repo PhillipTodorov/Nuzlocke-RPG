@@ -1,10 +1,10 @@
 extends Node
 
-onready var max_health: int
-onready var speed:int
-onready var health: int
-onready var xp: int
-onready var dialogue_placeholder_dict: Dictionary
+@onready var max_health: int
+@onready var speed:int
+@onready var health: int
+@onready var xp: int
+@onready var dialogue_placeholder_dict: Dictionary
 
 signal health_changed (new_health)
 signal Friendly_health_depleted
@@ -29,8 +29,8 @@ func take_damage(hit):
 	if health <= 0:
 		#either 'Enemy' or 'Friendly' '_health_depleted' 
 		var spirit_type = String(get_parent().get_parent().get_parent().name)
-		connect("Enemy_health_depleted", get_node('/root/BattlePhase/DialogueHandler'), ("Enemy_health_depleted_Dialogue"))
-		connect("Friendly_health_depleted", get_node('/root/BattlePhase/DialogueHandler'), ("Friendly_health_depleted_Dialogue"))
+		connect("Enemy_health_depleted", Callable(get_node('/root/BattlePhase/DialogueHandler'), ("Enemy_health_depleted_Dialogue")))
+		connect("Friendly_health_depleted", Callable(get_node('/root/BattlePhase/DialogueHandler'), ("Friendly_health_depleted_Dialogue")))
 		emit_signal(spirit_type + "_health_depleted")
 
 func heal(amount):

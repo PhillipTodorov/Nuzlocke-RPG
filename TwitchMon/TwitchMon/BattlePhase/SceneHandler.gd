@@ -1,12 +1,12 @@
 extends Node
 
-onready var dialogue_box = get_parent().get_node("DialogueBox")
-onready var interface = get_parent().get_node("Interface/AttackItemsRunSpirits")
-onready var friendly = get_parent().get_node("Friendly")
+@onready var dialogue_box = get_parent().get_node("DialogueBox")
+@onready var interface = get_parent().get_node("Interface/AttackItemsRunSpirits")
+@onready var friendly = get_parent().get_node("Friendly")
 
 
 func _ready():
-	interface.connect("run_pressed", self, "save_party_stats")
+	interface.connect("run_pressed", Callable(self, "save_party_stats"))
 	pass
 
 

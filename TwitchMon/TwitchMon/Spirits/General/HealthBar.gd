@@ -1,20 +1,20 @@
 extends Control
 
-onready var health_bar_texture = $HealthBarTexture
-onready var update_Tween = $HealthBarTexture/UpdateTween
-onready var jobs = get_parent().get_node("Jobs")
-onready var stats = get_parent().get_node("Jobs/Stats")
-onready var hp = $HP
-onready var label_handler = get_parent().get_node("LabelHandler")
+@onready var health_bar_texture = $HealthBarTexture
+@onready var update_Tween = $HealthBarTexture/UpdateTween
+@onready var jobs = get_parent().get_node("Jobs")
+@onready var stats = get_parent().get_node("Jobs/Stats")
+@onready var hp = $HP
+@onready var label_handler = get_parent().get_node("LabelHandler")
 
 func _ready():
 	health_bar_texture.max_value = get_parent().get_node("Jobs/Stats").max_health
 	print("[HealthBar.gd] max health:", get_parent().get_node("Jobs/Stats").max_health)
 	health_bar_texture.value = get_parent().get_node("Jobs/Stats").health
 	print("[HealthBar.gd] health:", get_parent().get_node("Jobs/Stats").health)
-	jobs.connect("health_changed", self, "_on_health_updated")
-	stats.connect("health_changed", self, "_on_health_updated")
-	jobs.connect("max_health_changed", self, "_on_max_health_updated")
+	jobs.connect("health_changed", Callable(self, "_on_health_updated"))
+	stats.connect("health_changed", Callable(self, "_on_health_updated"))
+	jobs.connect("max_health_changed", Callable(self, "_on_max_health_updated"))
 
 
 

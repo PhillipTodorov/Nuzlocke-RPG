@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 
 # Declare member variables here. Examples:
@@ -46,11 +46,11 @@ func MovementLoop(delta):
 		$AnimationPlayer.play("Walk_SE")
 		
 	var motion = move_direction.normalized() * speed
-	move_and_slide(motion)
+	set_velocity(motion)
+	move_and_slide()
 
 
 
 func _on_Timer_timeout():
 	pass # Replace with function body.
 	
-

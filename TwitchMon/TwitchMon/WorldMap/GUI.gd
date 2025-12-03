@@ -6,9 +6,9 @@ func _input(event):
 		get_node("GameMenu").show()
 
 func _on_OptionBtn_pressed():
-	var options_menu = load("res://GUI Scenes/OptionsMenu.tscn").instance()
+	var options_menu = load("res://GUI Scenes/OptionsMenu.tscn").instantiate()
 	add_child(options_menu)
-	get_node("OptionsMenu").connect("CloseOptions",self,"CloseOptions")
+	get_node("OptionsMenu").connect("CloseOptions", Callable(self, "CloseOptions"))
 
 
 func CloseOptions():

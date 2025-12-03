@@ -13,7 +13,7 @@ func _on_Special_pressed():
 
 
 func _on_Light_pressed():
-	emit_signal("friendly_attack_queued", "Light", 10)
+	emit_signal("friendly_attack_queued", "Light3D", 10)
 	pass # Replace with function body.
 
 

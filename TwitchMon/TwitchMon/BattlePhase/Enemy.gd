@@ -1,13 +1,13 @@
 extends Node
 
-onready var RNG_number: float
+@onready var RNG_number: float
 
-onready var michael = "res://Spirits/Michael/Michael.tscn"
-onready var xqc = "res://Spirits/xQc/xQc.tscn"
-onready var poki = "res://Spirits/Poki/Poki.tscn"
-onready var general = "res://Spirits/General/Spirit.tscn"
+@onready var michael = "res://Spirits/Michael/Michael.tscn"
+@onready var xqc = "res://Spirits/xQc/xQc.tscn"
+@onready var poki = "res://Spirits/Poki/Poki.tscn"
+@onready var general = "res://Spirits/General/Spirit.tscn"
 
-onready var list_of_spirits = {
+@onready var list_of_spirits = {
 	michael: 1, 
 	xqc: 1, 
 	poki: 1, 
@@ -30,7 +30,7 @@ func twitchmon_randomizer():
 	for spirit in list_of_spirits:
 		if list_of_spirits[spirit] > RNG_number:
 		#	print("[Enemy.gd] ",spirit)
-			self.add_child(load(spirit).instance())
+			self.add_child(load(spirit).instantiate())
 			break
 
 

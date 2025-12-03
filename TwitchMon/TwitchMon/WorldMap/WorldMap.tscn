@@ -1,155 +1,141 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=11 format=3 uid="uid://b18khektn4bnb"]
 
-[ext_resource path="res://Background.png" type="Texture" id=1]
-[ext_resource path="res://Fonts/DotGothic16-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Surface/Surface.tscn" type="PackedScene" id=4]
-[ext_resource path="res://TileMapAssets/TileMapAssets.tres" type="TileSet" id=5]
-[ext_resource path="res://WorldMap/GUI.gd" type="Script" id=6]
-[ext_resource path="res://WorldMap/WorldMap.gd" type="Script" id=7]
-[ext_resource path="res://Surface/Surface.gd" type="Script" id=8]
+[ext_resource type="Texture2D" uid="uid://2puo2jstki8v" path="res://Background.png" id="1"]
+[ext_resource type="FontFile" uid="uid://wkrch1kpgbiu" path="res://Fonts/DotGothic16-Regular.ttf" id="2"]
+[ext_resource type="PackedScene" path="res://Player/Player.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://Surface/Surface.tscn" id="4"]
+[ext_resource type="TileSet" path="res://TileMapAssets/TileMapAssets.tres" id="5"]
+[ext_resource type="Script" uid="uid://b51d3nb5kv44v" path="res://WorldMap/GUI.gd" id="6"]
+[ext_resource type="Script" uid="uid://3gpkc2j7td68" path="res://WorldMap/WorldMap.gd" id="7"]
+[ext_resource type="Script" uid="uid://diefamv7gmwfd" path="res://Surface/Surface.gd" id="8"]
 
-[sub_resource type="DynamicFont" id=1]
-size = 25
-font_data = ExtResource( 2 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("2"), ExtResource("2")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
-[sub_resource type="DynamicFont" id=2]
-font_data = ExtResource( 2 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("2"), ExtResource("2")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [node name="WorldMap" type="Node2D"]
-position = Vector2( 104.768, -26.9858 )
-script = ExtResource( 7 )
+position = Vector2(104.768, -26.9858)
+script = ExtResource("7")
 
 [node name="Ground" type="TileMap" parent="."]
-mode = 1
-tile_set = ExtResource( 5 )
-cell_size = Vector2( 64, 32 )
-cell_tile_origin = 2
-format = 1
-tile_data = PoolIntArray( -1, 40, 0, 196611, 52, 0, 196612, 52, 0, 196613, 52, 0, 196614, 52, 0, 196615, 52, 0, 196616, 52, 0, 196617, 52, 0, 196618, 52, 0, 262146, 52, 0, 262147, 52, 0, 262148, 52, 0, 262150, 52, 0, 262151, 52, 0, 262152, 52, 0, 262153, 52, 0, 262154, 52, 0, 262155, 52, 0, 327681, 52, 0, 327682, 52, 0, 327683, 52, 0, 327684, 52, 0, 327685, 52, 0, 327686, 52, 0, 327687, 52, 0, 327688, 52, 0, 327690, 52, 0, 327691, 52, 0, 327692, 52, 0, 393217, 52, 0, 393218, 52, 0, 393219, 52, 0, 393220, 52, 0, 393221, 52, 0, 393224, 52, 0, 393225, 52, 0, 393227, 52, 0, 393228, 52, 0, 393229, 52, 0, 458753, 52, 0, 458754, 52, 0, 458755, 52, 0, 458756, 52, 0, 458757, 52, 0, 458758, 52, 0, 458759, 52, 0, 458760, 52, 0, 458761, 52, 0, 458762, 52, 0, 458763, 52, 0, 458764, 52, 0, 458765, 52, 0, 458766, 52, 0, 524289, 52, 0, 524290, 52, 0, 524291, 49, 0, 524292, 49, 0, 524293, 52, 0, 524294, 52, 0, 524295, 52, 0, 524296, 52, 0, 524297, 52, 0, 524298, 52, 0, 524299, 52, 0, 524301, 49, 0, 524302, 52, 0, 524303, 52, 0, 589826, 52, 0, 589827, 52, 0, 589828, 49, 0, 589829, 49, 0, 589830, 49, 0, 589831, 49, 0, 589832, 49, 0, 589833, 52, 0, 589834, 52, 0, 589835, 52, 0, 589836, 49, 0, 589837, 49, 0, 589838, 52, 0, 589839, 52, 0, 655362, 52, 0, 655363, 52, 0, 655364, 52, 0, 655365, 52, 0, 655366, 52, 0, 655367, 52, 0, 655368, 49, 0, 655369, 49, 0, 655370, 49, 0, 655371, 49, 0, 655372, 49, 0, 655373, 52, 0, 655374, 52, 0, 655375, 52, 0, 720899, 52, 0, 720900, 52, 0, 720901, 52, 0, 720902, 52, 0, 720903, 52, 0, 720904, 52, 0, 720905, 52, 0, 720906, 52, 0, 720907, 52, 0, 720908, 52, 0, 720909, 52, 0, 720910, 52, 0, 720911, 52, 0, 720912, 52, 0, 786435, 52, 0, 786436, 52, 0, 786437, 52, 0, 786438, 52, 0, 786439, 52, 0, 786440, 52, 0, 786441, 52, 0, 786442, 52, 0, 786444, 52, 0, 786446, 52, 0, 786447, 52, 0, 786448, 52, 0, 786449, 52, 0, 851972, 52, 0, 851973, 52, 0, 851974, 52, 0, 851975, 52, 0, 851976, 52, 0, 851977, 52, 0, 851978, 52, 0, 851979, 52, 0, 851980, 52, 0, 851981, 52, 0, 851982, 52, 0, 851984, 52, 0, 851985, 52, 0, 917509, 52, 0, 917510, 52, 0, 917511, 52, 0, 917513, 52, 0, 917514, 52, 0, 917515, 52, 0, 917516, 52, 0, 917517, 52, 0, 917519, 52, 0, 917520, 52, 0, 983045, 52, 0, 983046, 52, 0, 983047, 52, 0, 983048, 52, 0, 983050, 52, 0, 983051, 52, 0, 983052, 52, 0, 983053, 52, 0, 983054, 52, 0, 983055, 52, 0, 983057, 52, 0, 983058, 52, 0, 1048581, 52, 0, 1048583, 52, 0, 1048584, 52, 0, 1048585, 52, 0, 1048586, 52, 0, 1048587, 52, 0, 1048588, 52, 0, 1048589, 52, 0, 1048591, 52, 0, 1048592, 52, 0, 1048593, 52, 0, 1048594, 52, 0, 1048595, 52, 0, 1114117, 52, 0, 1114118, 52, 0, 1114119, 52, 0, 1114120, 52, 0, 1114123, 52, 0, 1114124, 52, 0, 1114125, 52, 0, 1114126, 52, 0, 1114127, 52, 0, 1114128, 52, 0, 1114129, 52, 0, 1114130, 52, 0, 1179654, 52, 0, 1179655, 52, 0, 1179656, 52, 0, 1179657, 52, 0, 1179658, 52, 0, 1179659, 52, 0, 1179660, 52, 0, 1179661, 52, 0, 1179662, 52, 0, 1179663, 52, 0, 1179664, 52, 0, 1179665, 52, 0, 1179666, 52, 0, 1245190, 52, 0, 1245191, 52, 0, 1245192, 52, 0, 1245193, 52, 0, 1245194, 52, 0, 1245195, 52, 0, 1245196, 52, 0, 1245197, 52, 0, 1245198, 52, 0, 1245199, 52, 0, 1245200, 52, 0, 1245201, 52, 0, 1245202, 52, 0, 1245203, 52, 0, 1310726, 52, 0, 1310727, 52, 0, 1310728, 52, 0, 1310729, 52, 0, 1310730, 52, 0, 1310731, 52, 0, 1310732, 52, 0, 1310733, 52, 0, 1310735, 52, 0, 1310736, 52, 0, 1310737, 52, 0, 1310738, 52, 0, 1310739, 52, 0, 1376263, 52, 0, 1376264, 52, 0, 1376265, 52, 0, 1376266, 52, 0, 1376267, 52, 0, 1376268, 52, 0, 1376269, 52, 0, 1376270, 52, 0, 1376271, 52, 0, 1376273, 52, 0, 1376274, 52, 0, 1376275, 52, 0, 1441800, 52, 0, 1441801, 52, 0, 1441802, 52, 0, 1441803, 52, 0, 1441804, 52, 0, 1441805, 52, 0, 1441807, 52, 0, 1441808, 52, 0, 1441809, 52, 0, 1441811, 52, 0, 1507337, 52, 0, 1507338, 52, 0, 1507339, 52, 0, 1507340, 52, 0, 1507341, 52, 0, 1507342, 52, 0, 1507343, 52, 0, 1507347, 52, 0, 1572873, 52, 0, 1572874, 52, 0, 1572875, 52, 0, 1572876, 52, 0, 1572877, 52, 0, 1572878, 52, 0, 1572879, 52, 0, 1572880, 52, 0, 1572883, 52, 0, 1638410, 52, 0, 1638411, 52, 0, 1638416, 52, 0, 1638417, 52, 0, 1638418, 52, 0, 1638419, 52, 0 )
+tile_set = ExtResource("5")
+format = 2
 
-[node name="YSort" type="YSort" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
 z_index = 2
 
-[node name="Surface" parent="YSort" instance=ExtResource( 4 )]
-script = ExtResource( 8 )
+[node name="Surface" parent="Node2D" instance=ExtResource("4")]
+format = 2
+script = ExtResource("8")
 target_stage = "res://BattlePhase/BattlePhase.tscn"
 
-[node name="Player" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( -149.132, 152.907 )
+[node name="Player" parent="Node2D" instance=ExtResource("3")]
+position = Vector2(-149.132, 152.907)
 
 [node name="GUI" type="CanvasLayer" parent="."]
-script = ExtResource( 6 )
+script = ExtResource("6")
 
 [node name="GameMenu" type="Control" parent="GUI"]
 visible = false
+layout_mode = 3
 anchor_left = 0.15
 anchor_top = -0.054
 anchor_right = 0.15
 anchor_bottom = -0.054
-margin_left = 859.128
-margin_top = 112.901
-margin_right = 1059.13
-margin_bottom = 362.901
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 859.128
+offset_top = 112.901
+offset_right = 1059.13
+offset_bottom = 362.901
 
 [node name="NinePatchRect" type="NinePatchRect" parent="GUI/GameMenu"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_bottom = 20.0
-texture = ExtResource( 1 )
+offset_bottom = 20.0
+texture = ExtResource("1")
 patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 8
 patch_margin_bottom = 8
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="GUI/GameMenu"]
-margin_right = 200.0
-margin_bottom = 270.0
-custom_constants/separation = 5
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 270.0
+theme_override_constants/separation = 5
 
 [node name="GameMenuLabel" type="Label" parent="GUI/GameMenu/VBoxContainer"]
-margin_right = 200.0
-margin_bottom = 37.0
-rect_min_size = Vector2( 0, 37 )
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.313726, 0.305882, 0.305882, 1 )
-custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_minimum_size = Vector2(0, 37)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.313726, 0.305882, 0.305882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("1")
 text = "GAME MENU"
-align = 1
+horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="GUI/GameMenu/VBoxContainer"]
-margin_top = 42.0
-margin_right = 200.0
-margin_bottom = 42.01
-rect_min_size = Vector2( 0, 0.01 )
+custom_minimum_size = Vector2(0, 0.01)
+layout_mode = 2
 
 [node name="TwitchmonBtn" type="Button" parent="GUI/GameMenu/VBoxContainer"]
-margin_left = 20.0
-margin_top = 47.0
-margin_right = 180.0
-margin_bottom = 77.0
-rect_min_size = Vector2( 160, 27 )
+custom_minimum_size = Vector2(160, 27)
+layout_mode = 2
 size_flags_horizontal = 4
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource("2")
 text = "TWITCHMON"
 
 [node name="ItemsBtn" type="Button" parent="GUI/GameMenu/VBoxContainer"]
-margin_left = 20.0
-margin_top = 82.0
-margin_right = 180.0
-margin_bottom = 112.0
-rect_min_size = Vector2( 160, 27 )
+custom_minimum_size = Vector2(160, 27)
+layout_mode = 2
 size_flags_horizontal = 4
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource("2")
 text = "ITEMS"
 
 [node name="PlayerBtn" type="Button" parent="GUI/GameMenu/VBoxContainer"]
-margin_left = 20.0
-margin_top = 117.0
-margin_right = 180.0
-margin_bottom = 147.0
-rect_min_size = Vector2( 160, 27 )
+custom_minimum_size = Vector2(160, 27)
+layout_mode = 2
 size_flags_horizontal = 4
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource("2")
 text = "PLAYER"
 
 [node name="OptionBtn" type="Button" parent="GUI/GameMenu/VBoxContainer"]
-margin_left = 20.0
-margin_top = 152.0
-margin_right = 180.0
-margin_bottom = 182.0
-rect_min_size = Vector2( 160, 27 )
+custom_minimum_size = Vector2(160, 27)
+layout_mode = 2
 size_flags_horizontal = 4
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource("2")
 text = "OPTIONS"
 
 [node name="SaveBtn" type="Button" parent="GUI/GameMenu/VBoxContainer"]
-margin_left = 20.0
-margin_top = 187.0
-margin_right = 180.0
-margin_bottom = 217.0
-rect_min_size = Vector2( 160, 27 )
+custom_minimum_size = Vector2(160, 27)
+layout_mode = 2
 size_flags_horizontal = 4
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource("2")
 text = "SAVE"
 
 [node name="ExitBtn" type="Button" parent="GUI/GameMenu/VBoxContainer"]
-margin_left = 20.0
-margin_top = 222.0
-margin_right = 180.0
-margin_bottom = 252.0
-rect_min_size = Vector2( 160, 27 )
+custom_minimum_size = Vector2(160, 27)
+layout_mode = 2
 size_flags_horizontal = 4
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource("2")
 text = "EXIT"
+
 [connection signal="pressed" from="GUI/GameMenu/VBoxContainer/OptionBtn" to="GUI" method="_on_OptionBtn_pressed"]
 [connection signal="pressed" from="GUI/GameMenu/VBoxContainer/ExitBtn" to="GUI" method="_on_ExitBtn_pressed"]
