@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://wkrch1kpgbiu" path="res://Fonts/DotGothic16-Regular.ttf" id="2"]
 [ext_resource type="PackedScene" path="res://Player/Player.tscn" id="3"]
 [ext_resource type="PackedScene" path="res://Surface/Surface.tscn" id="4"]
-[ext_resource type="TileSet" path="res://TileMapAssets/TileMapAssets.tres" id="5"]
+[ext_resource type="TileSet" uid="uid://b6ygsia267ajq" path="res://TileMapAssets/TileMapAssets.tres" id="5"]
 [ext_resource type="Script" uid="uid://b51d3nb5kv44v" path="res://WorldMap/GUI.gd" id="6"]
 [ext_resource type="Script" uid="uid://3gpkc2j7td68" path="res://WorldMap/WorldMap.gd" id="7"]
 [ext_resource type="Script" uid="uid://diefamv7gmwfd" path="res://Surface/Surface.gd" id="8"]

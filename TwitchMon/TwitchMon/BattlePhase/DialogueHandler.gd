@@ -23,8 +23,8 @@ var scene_dialogue_dict: Dictionary
 
 func _ready():
 	dialogue_box.connect("line_displayed", Callable(self, "dialogue_logic"))
-	interface.get_node("AttackItemsRunSpirits").connect("attack_items_run_spirits_pressed",
-	self, "attack_items_run_spirits_pressed_dialogue_logic")
+	interface.get_node("AttackItemsRunSpirits").connect("attack_items_run_spirits_pressed", 
+	Callable(self, "attack_items_run_spirits_pressed_dialogue_logic"))
 	friendlyAttackInterface.connect("friendly_attack_queued", Callable(self, "_save_friendly_attack_name"))
 	enemyAttackPicker.connect("enemy_attack_queued", Callable(self, "_save_enemy_attack_name"))
 	
@@ -97,8 +97,3 @@ func _save_friendly_attack_name(attack, __):
 
 func _save_enemy_attack_name(attack, __):
 	enemy_attack_name = attack
-
-
-
-
-

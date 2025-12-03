@@ -1,0 +1,8 @@
+res://default_env.tres
+res://BattlePhase/DialogueHandler.gd
+res://Main/Main.tscn
+res://Themes/Textbox_theme.tres
+res://Surface/Surface.gd
+res://WorldMap/WorldMap.tscn
+res://TileMapAssets/TileMapAssets.tres
+res://mark_encounter_tiles.gd
